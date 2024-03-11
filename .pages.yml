@@ -1,5 +1,12 @@
 media: static/projects
 content:
+  - name: homepage
+    label: Homepage
+    path: src/content/homepage.json
+    type: file
+    format: json
+    fields:
+      - { name: intro, label: Intro, type: string }
   - name: info
     label: Info
     path: src/content/info.json
