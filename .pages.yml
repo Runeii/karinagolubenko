@@ -19,7 +19,7 @@ content:
     label: Projects
     type: collection
     path: src/content/projects
-    filename: project-{title}.json
+    filename: project-{fields.title}.json
     format: json
     subfolders: false
     view:
