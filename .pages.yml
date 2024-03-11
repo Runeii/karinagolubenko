@@ -48,4 +48,5 @@ content:
       - { name: image, label: Image, type: image, list: false, options: { input: static/projects, output: /projects } }
       - { name: tags, label: Tags, type: string, list: true }
       - { name: year, label: Year, type: string }
-      - { name: lede, label: Lede, type: string }
+      - { name: lede, label: Lede, type: rich-text, options: { format: html, image: false } }
+
