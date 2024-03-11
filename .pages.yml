@@ -8,7 +8,17 @@ content:
     fields:
       - { name: intro, label: Intro, type: string }
       - { name: email, label: Email, type: string }
-      - { name: footer, label: Footer, type: string, list: true }
+      - name: footer
+        label: Footer
+        type: object
+        list: true
+        fields:
+          - name: first_name
+            name: First name
+            type: string
+          - name: last_name
+            name: Last name
+            type: string
   - name: info
     label: Info
     path: src/content/info.json
