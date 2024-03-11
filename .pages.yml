@@ -2,7 +2,7 @@ media: static/projects
 content:
   - name: about
     label: About
-    path: content/info.json
+    path: src/content/info.json
     type: file
     format: json
     fields:
@@ -13,7 +13,7 @@ content:
   - name: project
     label: Projects
     type: collection
-    path: content/projects
+    path: src/content/projects
     filename: project-{primary}.json
     format: json
     subfolders: false
