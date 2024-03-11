@@ -1,10 +1,10 @@
 <script>
 	import Card from '../components/Card/Card.svelte';
+	import content from '../content/homepage.json';
 </script>
 
 <p class="intro">
-	Designing services and interactive experiences that seamlessly connect technology with human
-	emotions.
+	{content.intro}
 </p>
 <div class="projects">
 	<Card

@@ -4,9 +4,9 @@
 
 <div class="bio">{@html content.bio}</div>
 <ul class="tags">
-	<li>UI/UX Design</li>
-	<li>Service Design</li>
-	<li>Concept Development</li>
+	{#each content.tags as tag}
+		<li>{tag}</li>
+	{/each}
 </ul>
 
 <style lang="postcss">
