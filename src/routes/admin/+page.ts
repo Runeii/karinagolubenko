@@ -1,6 +1,6 @@
 import { redirect } from '@sveltejs/kit';
-import type { LayoutServerLoad } from './$types';
+import type { PageLoad } from './$types';
 
-export const load: LayoutServerLoad = () => {
+export const load: PageLoad = async () => {
   redirect(302, 'https://app.pagescms.org/Runeii/karinagolubenko/main/content');
 };

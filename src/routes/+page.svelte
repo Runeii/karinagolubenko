@@ -25,10 +25,19 @@
 		text-align: center;
 		margin-bottom: 52px;
 		padding: 0 12px;
+		@media (min-width: 720px) {
+			@mixin heading3;
+			margin-bottom: 80px;
+		}
 	}
+
 	.projects {
 		display: flex;
 		flex-direction: column;
 		gap: 32px;
+
+		@media (min-width: 720px) {
+			gap: 80px;
+		}
 	}
 </style>

@@ -17,6 +17,10 @@
 		flex-direction: column;
 		gap: 0.5em;
 
+		@media (min-width: 720px) {
+			@mixin heading3;
+		}
+
 		:global(p) {
 			margin: 0;
 			padding: 0;
@@ -38,6 +42,10 @@
 			border-radius: 24px;
 			list-style: none;
 			background-color: var(--light-grey);
+
+			@media (min-width: 720px) {
+				@mixin body3;
+			}
 		}
 	}
 </style>
