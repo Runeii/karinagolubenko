@@ -22,9 +22,11 @@ content:
         type: image
   - name: info
     label: Info page
+    path: content/info.json
     type: file
     format: json
     fields:
       - name: bio
         label: Bio
         type: rich-text
+        options: { format: html, image: false }
