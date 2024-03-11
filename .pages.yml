@@ -31,7 +31,6 @@ content:
         order: asc
     fields:
       - { name: order, label: Order, type: number }
-      - { name: line1, label: First Line, type: string }
-      - { name: line2, label: Second Line, type: string }
-      - { name: line3, label: Third Line, type: string }
+      - { name: line1, label: Title, type: string }
+      - { name: line2, label: Description, type: string }
       - { name: src, label: Image, type: image, list: false, options: { input: static/projects, output: /projects, extensions: jpg, jpeg, png } }
