@@ -23,7 +23,7 @@ content:
     format: json
     subfolders: false
     view:
-      fields: [ order, title ]
+      fields: [ title, order ]
       primary: order
       sort: [ order ]
       default:
