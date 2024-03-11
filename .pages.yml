@@ -7,6 +7,7 @@ content:
     format: json
     fields:
       - { name: intro, label: Intro, type: string }
+      - { name: email, label: Email, type: string }
       - { name: footer, label: Footer, type: string, list: true }
   - name: info
     label: Info
