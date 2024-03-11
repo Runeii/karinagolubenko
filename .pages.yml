@@ -4,6 +4,7 @@ content:
     label: Projects
     path: content/projects
     type: collection
+    format: json
     view:
       fields: [title, published, date]
     fields:
