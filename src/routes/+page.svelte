@@ -1,39 +1,22 @@
-<script>
+<script lang="ts">
 	import Card from '../components/Card/Card.svelte';
-	import content from '../content/homepage.json';
+	import type { PageData } from '$types';
+
+	export let data: PageData;
 </script>
 
 <p class="intro">
-	{content.intro}
+	{data.content.intro}
 </p>
 <div class="projects">
-	<Card
-		title="Store of the Future"
-		image="https://via.placeholder.com/342"
-		description="In-store digital selling platform"
-		slug="/store-of-the-future"
-	/>
-
-	<Card
-		title="Store of the Future"
-		image="https://via.placeholder.com/342"
-		description="In-store digital selling platform"
-		slug="/store-of-the-future"
-	/>
-
-	<Card
-		title="Store of the Future"
-		image="https://via.placeholder.com/342"
-		description="In-store digital selling platform"
-		slug="/store-of-the-future"
-	/>
-
-	<Card
-		title="Store of the Future"
-		image="https://via.placeholder.com/342"
-		description="In-store digital selling platform"
-		slug="/store-of-the-future"
-	/>
+	{#each data.projects as project, key}
+		<Card
+			title={project.title}
+			image={project.image}
+			description={project.description}
+			slug={`/projects/${project.slug}`}
+		/>
+	{/each}
 </div>
 
 <style lang="postcss">
