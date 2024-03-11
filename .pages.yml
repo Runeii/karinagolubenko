@@ -2,7 +2,7 @@ media: media
 content:
   - name: projects
     label: Projects
-    path: src/_projects
+    path: content/projects
     type: collection
     view:
       fields: [title, published, date]
