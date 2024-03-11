@@ -7,9 +7,7 @@ content:
     format: json
     fields:
       - { name: bio, label: Bio, type: rich-text, options: { format: html, image: false } }
-      - { name: clients, label: Clients, type: string }
-      - { name: exhibitions, label: Exhibitions, type: string }
-      - { name: talks, label: Talks, type: string }
+      - { name: tags, label: Tags (comma seperated), type: string }
   - name: project
     label: Projects
     type: collection
