@@ -45,6 +45,8 @@
 	}
 
 	.content {
-		margin: 0 20px auto;
+		margin: 0 auto;
+		padding: 0 20px;
+		max-width: 928px;
 	}
 </style>
