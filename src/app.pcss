@@ -1,0 +1,31 @@
+@font-face {
+	font-family: 'GT Sectra';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/fonts/GT Sectra/GT-Sectra-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Suisse BP';
+	font-style: normal;
+	font-weight: 400;
+	src: url("/fonts/Suisse BP/Suisse BP Int'l Regular.woff") format('woff');
+}
+
+:root {
+	--black-tuple: 27 27 27;
+	--dark-grey-tuple: 107 107 107;
+	--light-grey-tuple: 232 232 232;
+	--background-tuple: 245 245 245;
+	--black: rgb(var(--black-tuple) / 1);
+	--dark-grey: rgb(var(--dark-grey-tuple) / 1);
+	--light-grey: rgb(var(--light-grey-tuple) / 1);
+	--background: rgb(var(--background-tuple) / 1);
+}
+
+html,
+body {
+	background-color: var(--background);
+	margin: 0;
+	padding: 0;
+}
