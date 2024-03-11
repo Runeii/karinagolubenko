@@ -24,6 +24,7 @@ content:
     label: Info page
     path: _info.yml
     type: file
+    format: json
     fields:
       - name: bio
         label: Bio
