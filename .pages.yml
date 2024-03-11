@@ -48,6 +48,6 @@ content:
       - { name: image, label: Image, type: image, list: false, options: { input: static/projects, output: /projects } }
       - { name: year, label: Year, type: string }
       - { name: tags, label: Tags, type: string, list: true }
-      - { name: year, label: Credits, type: string }
+      - { name: credits, label: Credits, type: string }
       - { name: lede, label: Lede, type: rich-text, options: { format: html, image: false } }
 
