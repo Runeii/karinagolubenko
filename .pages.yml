@@ -28,3 +28,4 @@ content:
       - name: bio
         label: Bio
         type: rich-text
+        format: html
