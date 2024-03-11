@@ -1,18 +1,8 @@
-<div class="bio">
-	<p>
-		As a Senior Experience Designer, I bring over six years of expertise in retail, cultural, and
-		spatial technology domains.
-	</p>
-	<p>
-		Specializing in product design, interactive brand experiences, and R&D, I can oversee the entire
-		design process from discovery to delivery phase.
-	</p>
-	<p>
-		My particular interest lies in exploring the interaction between people and technology beyond
-		traditional devices, seamlessly integrating physical and digital elements to elevate user
-		experiences.
-	</p>
-</div>
+<script>
+	import content from '../../content/info.json';
+</script>
+
+<div class="bio">{@html content.bio}</div>
 <ul class="tags">
 	<li>UI/UX Design</li>
 	<li>Service Design</li>
@@ -27,7 +17,7 @@
 		flex-direction: column;
 		gap: 0.5em;
 
-		p {
+		:global(p) {
 			margin: 0;
 			padding: 0;
 		}
