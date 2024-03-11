@@ -1,3 +1,0 @@
-{
-  "bio": "As a Senior Experience Designer, I bring over six years of expertise in retail, cultural, and spatial technology domains.\n\nSpecializing in product design, interactive brand experiences, and R&D, I can oversee the entire design process from discovery to delivery phase.\n\nMy particular interest lies in exploring the interaction between people and technology beyond traditional devices, seamlessly integrating physical and digital elements to elevate user experiences.\n"
-}
