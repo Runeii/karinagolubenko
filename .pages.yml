@@ -30,4 +30,3 @@ content:
       - name: bio
         label: Bio
         type: rich-text
-        options: { format: html, image: false }
