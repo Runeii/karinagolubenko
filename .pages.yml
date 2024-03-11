@@ -16,7 +16,7 @@ content:
         type: string
       - name: description
         label: Description
-        type: description
+        type: string
       - name: image
         label: Image
         type: image
