@@ -46,3 +46,6 @@ content:
       - { name: title, label: Title, type: string }
       - { name: description, label: Description, type: string }
       - { name: image, label: Image, type: image, list: false, options: { input: static/projects, output: /projects } }
+      - { name: tags, label: Tags, type: string, list: true }
+      - { name: year, label: Year, type: string }
+      - { name: lede, label: Lede, type: string }
