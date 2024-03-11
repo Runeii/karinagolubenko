@@ -2,9 +2,21 @@
   "intro": "Designing services and interactive experiences that seamlessly connect technology with human emotions.",
   "email": "hello@golubenko.com",
   "footer": [
-    "<a href=\"\">LinkedIn</a>",
-    "<a href=\"https://read.cv/kgolubenko\">Read.cv</a>",
-    "<a href=\"https://www.are.na/new-urgency/channels\">Are.na</a>",
-    "<a href=\"https://www.instagram.com/karina.golubenko/\">Instagram</a>"
+    {
+      "href": "https://linkedin.com/in/karina-golubenko-7b341aa0",
+      "text": "LinkedIn"
+    },
+    {
+      "href": "https://read.cv/kgolubenko",
+      "text": "Read.cv"
+    },
+    {
+      "href": "https://www.are.na/new-urgency/channels",
+      "text": "Are.na"
+    },
+    {
+      "href": "https://www.instagram.com/karina.golubenko",
+      "text": "Instagram"
+    }
   ]
 }
