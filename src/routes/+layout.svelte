@@ -1,5 +1,6 @@
 <script>
 	import '../app.pcss';
+	import Footer from '../components/Footer/Footer.svelte';
 </script>
 
 <header class="header">
@@ -12,6 +13,7 @@
 <div class="content">
 	<slot />
 </div>
+<Footer />
 
 <style lang="postcss">
 	.header {
@@ -43,6 +45,6 @@
 	}
 
 	.content {
-		margin: 0 20px;
+		margin: 0 20px auto;
 	}
 </style>
