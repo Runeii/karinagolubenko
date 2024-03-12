@@ -1,36 +1,39 @@
 <script>
-	import Card from '../../components/Card/Card.svelte';
+	import Card from '../../components/Cards/Card/Card.svelte';
+	import Cards from '../../components/Cards/Cards.svelte';
+	import NarrowLayout from '../../components/NarrowLayout/NarrowLayout.svelte';
+
+	const projects = [
+		{
+			title: 'Store of the Future',
+			image: 'https://via.placeholder.com/342',
+			description: 'In-store digital selling platform',
+			slug: '/store-of-the-future'
+		},
+		{
+			title: 'Store of the Future',
+			image: 'https://via.placeholder.com/342',
+			description: 'In-store digital selling platform',
+			slug: '/store-of-the-future'
+		},
+		{
+			title: 'Store of the Future',
+			image: 'https://via.placeholder.com/342',
+			description: 'In-store digital selling platform',
+			slug: '/store-of-the-future'
+		},
+		{
+			title: 'Store of the Future',
+			image: 'https://via.placeholder.com/342',
+			description: 'In-store digital selling platform',
+			slug: '/store-of-the-future'
+		}
+	];
 </script>
 
-<div class="projects">
-	<Card
-		title="Store of the Future"
-		image="https://via.placeholder.com/342"
-		description="In-store digital selling platform"
-		slug="/store-of-the-future"
-	/>
-
-	<Card
-		title="Store of the Future"
-		image="https://via.placeholder.com/342"
-		description="In-store digital selling platform"
-		slug="/store-of-the-future"
-	/>
-
-	<Card
-		title="Store of the Future"
-		image="https://via.placeholder.com/342"
-		description="In-store digital selling platform"
-		slug="/store-of-the-future"
-	/>
-
-	<Card
-		title="Store of the Future"
-		image="https://via.placeholder.com/342"
-		description="In-store digital selling platform"
-		slug="/store-of-the-future"
-	/>
-</div>
+<NarrowLayout>
+	<Cards {projects} />
+</NarrowLayout>
 
 <style lang="postcss">
 	.projects {

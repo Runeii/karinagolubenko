@@ -1,13 +1,14 @@
 <script>
+	import NarrowLayout from '../../components/NarrowLayout/NarrowLayout.svelte';
+	import Tags from '../../components/Tags/Tags.svelte';
+	import Tag from '../../components/Tags/Tags.svelte';
 	import content from '../../content/info.json';
 </script>
 
-<div class="bio">{@html content.bio}</div>
-<ul class="tags">
-	{#each content.tags as tag}
-		<li>{tag}</li>
-	{/each}
-</ul>
+<NarrowLayout>
+	<div class="bio">{@html content.bio}</div>
+	<Tags tags={content.tags} />
+</NarrowLayout>
 
 <style lang="postcss">
 	.bio {
@@ -19,33 +20,12 @@
 
 		@media (min-width: 720px) {
 			@mixin heading3;
+			margin-bottom: 62px;
 		}
 
 		:global(p) {
 			margin: 0;
 			padding: 0;
-		}
-	}
-	.tags {
-		display: flex;
-		flex-direction: row;
-		gap: 8px;
-		margin: 0;
-		padding: 0;
-		flex-wrap: wrap;
-
-		li {
-			@mixin body4;
-			display: block;
-			width: auto;
-			padding: 10px;
-			border-radius: 24px;
-			list-style: none;
-			background-color: var(--light-grey);
-
-			@media (min-width: 720px) {
-				@mixin body3;
-			}
 		}
 	}
 </style>
