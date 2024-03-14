@@ -20,7 +20,7 @@ content:
             label: Text
             type: string
   - name: info
-    label: Info
+    label: Info Page
     path: src/content/info.json
     type: file
     format: json
@@ -50,4 +50,24 @@ content:
       - { name: tags, label: Tags, type: string, list: true }
       - { name: credits, label: Credits, type: string }
       - { name: lede, label: Lede, type: rich-text, options: { format: html, image: false } }
+      
+  - name: research
+    label: Research
+    type: collection
+    path: src/content/research
+    filename: research-{fields.title}.json
+    format: json
+    subfolders: false
+    view:
+      fields: [ title, order ]
+      primary: order
+      sort: [ order ]
+      default:
+        sort: order
+        order: asc
+    fields:
+      - { name: order, label: Order, type: number }
+      - { name: title, label: Title, type: string }
+      - { name: description, label: Description, type: string }
+      - { name: image, label: Image, type: image, list: false, options: { input: static/projects, output: /projects } }}
 
