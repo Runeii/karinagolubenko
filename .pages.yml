@@ -57,7 +57,8 @@ content:
         fields:
           - name: text
             label: Text
-            type: string
+            type: rich-text
+            options: { format: html, image: false }
           - name: image
             label: Image
             type: string
