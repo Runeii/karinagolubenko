@@ -61,7 +61,7 @@ content:
             fields:
                - name: heading
                  label: Heading
-                 type: text
+                 type: string
                - name: text
                  label: Text
                  type: rich-text
