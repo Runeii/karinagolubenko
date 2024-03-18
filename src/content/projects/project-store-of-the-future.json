@@ -17,7 +17,13 @@
       "text": {
         "heading": "Insight",
         "text": "A memorable hotel stay typically promises luxury, but how can we elevate it to offer a real wellness experience with citizenM's light-hearted and humorous attitude towards standard hospitality 'promises'?"
-      }
+      },
+      "images": [
+        {
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
     },
     {
       "text": {
@@ -40,6 +46,18 @@
       "images": [
         {
           "image": "/projects/Milan-03 3.png",
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "text": {
+        "heading": "Process",
+        "text": "Rather than seeking alignment on fully developed concepts we ideated quickly, tested ideas, validated the concepts with hotel's guests, and delivered rapid prototypes to determine the potential of an idea. The final insights and concept demos were shared with the client as part of the creative board meetings."
+      },
+      "images": [
+        {
           "width": 100,
           "marginLeft": 0
         }
