@@ -71,9 +71,11 @@ content:
                - name: width
                  label: Width (%)
                  type: number
+                 default: 100
                - name: marginLeft
                  label: Margin Left (%)
                  type: number
+                 default: 0
                  
       
   - name: research
