@@ -23,7 +23,14 @@
       "text": {
         "heading": "Idea",
         "text": "When our team at Random Studio took on the challenge of redefining hotel experience for citizenM, we aimed to enhance their room's inherent strengths to provide value beyond existing apps and travel gadgets. "
-      }
+      },
+      "images": [
+        {
+          "image": "/projects/Portfolio External (1).png",
+          "width": 66,
+          "marginLeft": 0
+        }
+      ]
     },
     {
       "text": {
