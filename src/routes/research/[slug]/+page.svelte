@@ -10,19 +10,6 @@
 	<h1 class="title">{data.title}</h1>
 	<p class="subtitle">{data.description}</p>
 	<img class="image" src={data.image} alt={data.title} />
-	<dl class="meta">
-		<div class="year">
-			<dt>Year</dt>
-			<dd>{data.year}</dd>
-		</div>
-
-		<div class="credits">
-			<dt>Credits</dt>
-			<dd>{data.credits}</dd>
-		</div>
-		<Tag class="tags" tags={data.tags} />
-	</dl>
-	<p class="lede">{data.lede}</p>
 </WideLayout>
 
 <style lang="postcss">

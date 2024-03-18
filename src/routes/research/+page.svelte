@@ -1,38 +1,13 @@
-<script>
+<script lang="ts">
+	import type { PageData } from '$types';
 	import Card from '../../components/Cards/Card/Card.svelte';
 	import Cards from '../../components/Cards/Cards.svelte';
 	import NarrowLayout from '../../components/NarrowLayout/NarrowLayout.svelte';
-
-	const projects = [
-		{
-			title: 'Store of the Future',
-			image: 'https://via.placeholder.com/342',
-			description: 'In-store digital selling platform',
-			slug: '/store-of-the-future'
-		},
-		{
-			title: 'Store of the Future',
-			image: 'https://via.placeholder.com/342',
-			description: 'In-store digital selling platform',
-			slug: '/store-of-the-future'
-		},
-		{
-			title: 'Store of the Future',
-			image: 'https://via.placeholder.com/342',
-			description: 'In-store digital selling platform',
-			slug: '/store-of-the-future'
-		},
-		{
-			title: 'Store of the Future',
-			image: 'https://via.placeholder.com/342',
-			description: 'In-store digital selling platform',
-			slug: '/store-of-the-future'
-		}
-	];
+	export let data: PageData;
 </script>
 
 <NarrowLayout>
-	<Cards {projects} />
+	<Cards projects={data.research} />
 </NarrowLayout>
 
 <style lang="postcss">

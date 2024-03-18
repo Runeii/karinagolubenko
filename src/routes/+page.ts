@@ -9,7 +9,7 @@ export const load: PageLoad = async () => {
 
     const module = await import(`../content/projects/${slug}.json`);
 
-    const prettySlug = slug.replace('project-', '');
+    const prettySlug = `/${slug.replace('project-', '')}`
 
     return {
       ...module,

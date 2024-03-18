@@ -10,7 +10,7 @@
 			title={project.title}
 			image={project.image}
 			description={project.description}
-			slug={`/projects/${project.slug}`}
+			slug={project.slug}
 		/>
 	{/each}
 </div>
