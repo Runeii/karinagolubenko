@@ -24,6 +24,18 @@
         "heading": "Idea",
         "text": "When our team at Random Studio took on the challenge of redefining hotel experience for citizenM, we aimed to enhance their room's inherent strengths to provide value beyond existing apps and travel gadgets. "
       }
+    },
+    {
+      "text": {
+        "heading": "End Result",
+        "text": "The result is a  personalised collection of well-being moments catered towards alleviating travel fatigue. These moments are complimentary with a citizenM room and can be accessed through the app. Each moment is has its own distinctive scenography, which is brought to life within the physical space of the room."
+      },
+      "images": [
+        {
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
     }
   ]
 }
