@@ -55,11 +55,11 @@ content:
         type: object
         list: true
         fields:
-          - name: href
-            label: URL
-            type: string
           - name: text
             label: Text
+            type: string
+          - name: image
+            label: Image
             type: string
       
   - name: research
