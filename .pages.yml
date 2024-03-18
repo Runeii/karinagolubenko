@@ -59,9 +59,19 @@ content:
             label: Text
             type: rich-text
             options: { format: html, image: false }
-          - name: image
-            label: Image
-            type: string
+          - name: images
+            label: Images
+            type: object
+            list: true
+            fields:
+               - name: image
+                 label: Image
+                 type: image
+                 list: false
+                 options:
+                   - input: static/projects
+                     output: /projects
+                     
       
   - name: research
     label: Research
