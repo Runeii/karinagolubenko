@@ -68,6 +68,9 @@ content:
                  label: Image
                  type: image
                  options: { input: static/projects, output: /projects }
+               - name: caption
+                 label: Caption
+                 type: text
                - name: width
                  label: Width (%)
                  type: number
