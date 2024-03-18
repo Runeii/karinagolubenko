@@ -50,6 +50,7 @@ content:
       - { name: tags, label: Tags, type: string, list: true }
       - { name: credits, label: Credits, type: string }
       - { name: lede, label: Lede, type: rich-text, options: { format: html, image: false } }
+      - { name: blocks, label: Content blocks, type: object, list: true  }
       
   - name: research
     label: Research
