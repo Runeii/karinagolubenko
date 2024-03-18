@@ -50,7 +50,17 @@ content:
       - { name: tags, label: Tags, type: string, list: true }
       - { name: credits, label: Credits, type: string }
       - { name: lede, label: Lede, type: rich-text, options: { format: html, image: false } }
-      - { name: blocks, label: Content blocks, type: object, list: true  }
+      - name: blocks
+        label: Content Blocks
+        type: object
+        list: true
+        fields:
+          - name: href
+            label: URL
+            type: string
+          - name: text
+            label: Text
+            type: string
       
   - name: research
     label: Research
