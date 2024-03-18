@@ -58,7 +58,6 @@ content:
           - name: text
             label: Text
             type: object
-            list: true
             fields:
                - name: heading
                  label: Heading
