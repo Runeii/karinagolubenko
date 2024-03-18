@@ -57,8 +57,16 @@ content:
         fields:
           - name: text
             label: Text
-            type: rich-text
-            options: { format: html, image: false }
+            type: object
+            list: true
+            fields:
+               - name: heading
+                 label: Heading
+                 type: text
+               - name: text
+                 label: Text
+                 type: rich-text
+                 options: { format: html, image: false }
           - name: images
             label: Images
             type: object
