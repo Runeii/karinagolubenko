@@ -67,11 +67,14 @@ content:
                - name: image
                  label: Image
                  type: image
-                 list: false
-                 options:
-                   - input: static/projects
-                     output: /projects
-                     
+                 options: { input: static/projects, output: /projects }
+               - name: width
+                 label: Width (%)
+                 type: number
+               - name: marginLeft
+                 label: Margin Left (%)
+                 type: number
+                 
       
   - name: research
     label: Research
