@@ -64,8 +64,7 @@ content:
                  type: string
                - name: text
                  label: Text
-                 type: rich-text
-                 options: { format: html, image: false }
+                 type: text
           - name: images
             label: Images
             type: object
@@ -77,7 +76,7 @@ content:
                  options: { input: static/projects, output: /projects }
                - name: caption
                  label: Caption
-                 type: text
+                 type: string
                - name: width
                  label: Width (%)
                  type: number
