@@ -11,5 +11,19 @@
     "Prototyping"
   ],
   "credits": "As part of Random Studio for Boucheron",
-  "lede": "As a member of the Experience Design team at Random Studio, I contributed to the creation of nature-themed digital intervention for Boucheron's flagship store in Ginza, Japan. "
+  "lede": "As a member of the Experience Design team at Random Studio, I contributed to the creation of nature-themed digital intervention for Boucheron's flagship store in Ginza, Japan. ",
+  "blocks": [
+    {
+      "text": {
+        "heading": "Insight",
+        "text": "A memorable hotel stay typically promises luxury, but how can we elevate it to offer a real wellness experience with citizenM's light-hearted and humorous attitude towards standard hospitality 'promises'?"
+      }
+    },
+    {
+      "text": {
+        "heading": "Idea",
+        "text": "When our team at Random Studio took on the challenge of redefining hotel experience for citizenM, we aimed to enhance their room's inherent strengths to provide value beyond existing apps and travel gadgets. "
+      }
+    }
+  ]
 }
