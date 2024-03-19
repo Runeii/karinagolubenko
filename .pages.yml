@@ -43,6 +43,7 @@ content:
         order: asc
     fields:
       - { name: order, label: Order, type: number }
+      - { name: isPrivate, label: Is Private?, type: boolean }
       - { name: title, label: Title, type: string }
       - { name: description, label: Description, type: string }
       - { name: image, label: Image, type: image, list: false, options: { input: static/projects, output: /projects } }
