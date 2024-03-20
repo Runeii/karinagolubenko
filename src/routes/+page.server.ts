@@ -44,11 +44,11 @@ export const load: PageServerLoad = async () => {
 
     const prettySlug = `/${slug.replace('project-', '')}`
 
-    const image = module.isPrivate ? await createPixellatedImage(module.image, 300) : module.image;
+    //const image = module.isPrivate ? await createPixellatedImage(module.image, 300) : module.image;
 
     return {
       ...module,
-      image,
+      image: module.image,
       default: undefined,
       slug: prettySlug,
     }
