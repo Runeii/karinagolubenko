@@ -1,6 +1,14 @@
 import { error } from '@sveltejs/kit';
 import type { RequestHandler } from './$types';
-import { Image, createCanvas, loadImage } from '@napi-rs/canvas';
+import { createCanvas, Image, loadImage } from '@napi-rs/canvas';
+
+const loadImageHelper = async (src: string) => {
+  return new Promise<Image>((resolve) => {
+    const img = new Image();
+    img.onload = () => resolve(img);
+    img.src = `./static${src}`;
+  });
+}
 
 const createPixellatedImage = async (image: Image, pixelSize = 80) => {
   const canvas = createCanvas(image.width, image.height);
@@ -28,7 +36,8 @@ export const GET: RequestHandler = async ({ setHeaders, request }) => {
     return error(400, 'Bad Request');
   }
 
-  const image = await loadImage(url);
+  const img = await loadImageHelper(url);
+  const image = await loadImage(img);
   const pixellatedImage = await createPixellatedImage(image, 300);
 
   setHeaders({
