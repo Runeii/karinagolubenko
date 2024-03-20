@@ -20,9 +20,32 @@
 			<dt>Credits</dt>
 			<dd>{data.credits}</dd>
 		</div>
-		<Tag class="tags" tags={data.tags} />
+		{#if data.tags}
+			<Tag class="tags" tags={data.tags} />
+		{/if}
 	</dl>
 	<p class="lede">{data.lede}</p>
+	{#if data.blocks}
+		{#each data.blocks as block}
+			{#if block.text.heading || block.text.text}
+				<div class="text">
+					{#if block.text.heading}
+						<h2>{block.text.heading}</h2>
+					{/if}
+					{#if block.text.text}
+						<p>{block.text.text}</p>
+					{/if}
+				</div>
+			{/if}
+			{#if block.images.length > 0}
+				<div class="images">
+					{#each block.images as image}
+						<img src={image.image} alt="" style={`--image-width: ${image.width}`} />
+					{/each}
+				</div>
+			{/if}
+		{/each}
+	{/if}
 </WideLayout>
 
 <style lang="postcss">
@@ -80,10 +103,24 @@
 	.lede {
 		@mixin heading4;
 		margin-bottom: 56px;
+		width: 82%;
 
 		@media (min-width: 720px) {
 			@mixin heading2;
 			margin-bottom: 72px;
+		}
+	}
+
+	.text {
+		margin-bottom: 80px;
+		width: 41%;
+
+		h2 {
+			@mixin heading4;
+			margin-bottom: 12px;
+		}
+		p {
+			@mixin body3;
 		}
 	}
 </style>

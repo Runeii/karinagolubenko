@@ -1,13 +1,18 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
+
 	export let title: string;
 	export let image: string;
 	export let description: string;
 	export let slug: string;
+	export let isPrivate: boolean;
+
+	let imageSrc = image.replace('static/', '');
 </script>
 
 <a href={slug} class="link">
-	<article class="card">
-		<img src={image.replace('static/', '')} alt={title} class="image" />
+	<article class={`card ${isPrivate && 'isPrivate'}`}>
+		<img src={imageSrc} alt={title} class="image" />
 		<h1 class="title">{title}</h1>
 		<p class="description">{description}</p>
 	</article>
