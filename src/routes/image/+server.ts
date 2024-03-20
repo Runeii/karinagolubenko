@@ -27,8 +27,8 @@ export const GET: RequestHandler = async ({ setHeaders, request }) => {
   if (!url) {
     return error(400, 'Bad Request');
   }
-  console.log(url, `./static${url}`)
-  const image = await loadImage(`./static${url}`);
+
+  const image = await loadImage(url);
   const pixellatedImage = await createPixellatedImage(image, 300);
 
   setHeaders({
