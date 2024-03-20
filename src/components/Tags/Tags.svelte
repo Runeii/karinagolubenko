@@ -2,7 +2,7 @@
 	export let tags;
 </script>
 
-<ul class="tags">
+<ul class={`tags ${$$restProps.class ?? ''}`}>
 	{#each tags as tag}
 		<li class="tag">{tag}</li>
 	{/each}

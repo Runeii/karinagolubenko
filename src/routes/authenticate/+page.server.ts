@@ -1,6 +1,7 @@
 import type { Actions } from './$types';
 import { fail, redirect } from '@sveltejs/kit';
-import { AUTHENTICATED_TOKEN } from '$env/static/private'
+import { PASSWORD } from '$env/static/private'
+import { hashString } from '../../utils';
 
 // This is not fort knox, but it's good enough for our purposes.
 export const actions = {
@@ -9,7 +10,9 @@ export const actions = {
     const password = data.get('password');
     const slug = data.get('slug') as string ?? '/'
 
-    if (password !== 'testpass') {
+    const isPasswordValid = password === PASSWORD
+
+    if (!isPasswordValid) {
       return fail(400, {
         incorrect: true,
         slug
@@ -17,7 +20,7 @@ export const actions = {
     }
 
 
-    cookies.set('authentication-hash', btoa(AUTHENTICATED_TOKEN), { path: '/' });
+    cookies.set('authentication-hash', hashString(password), { path: '/' });
 
     redirect(302, slug);
 

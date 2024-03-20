@@ -37,7 +37,7 @@
 					{/if}
 				</div>
 			{/if}
-			{#if block.images.length > 0}
+			{#if block.images.filter((image) => image.image).length > 0}
 				<div class="images">
 					{#each block.images as image}
 						<img src={image.image} alt="" style={`--image-width: ${image.width}`} />
@@ -73,18 +73,21 @@
 
 	.image {
 		width: 100%;
+		margin-bottom: 28px;
+		@media (min-width: 720px) {
+			margin-bottom: 44px;
+		}
 	}
 
 	.meta {
 		@mixin body4;
 		display: grid;
-		grid-template-columns: 45% 55%;
+		grid-template-columns: 16% 25% 9% 50%;
 		row-gap: 24px;
-		margin-bottom: 56px;
-
+		margin: 0 0 56px;
 		@media (min-width: 720px) {
 			@mixin body3;
-			margin-bottom: 66px;
+			margin-bottom: 82px;
 		}
 
 		dt {
@@ -96,13 +99,13 @@
 			margin: 0;
 		}
 		:global(.tags) {
-			grid-column: 1 / 3;
+			grid-column: 4 / 5;
 		}
 	}
 
 	.lede {
 		@mixin heading4;
-		margin-bottom: 56px;
+		margin: 0 auto 56px;
 		width: 82%;
 
 		@media (min-width: 720px) {
@@ -113,14 +116,34 @@
 
 	.text {
 		margin-bottom: 80px;
-		width: 41%;
+		width: 40%;
+
+		@media (min-width: 720px) {
+			margin-left: 40%;
+		}
 
 		h2 {
 			@mixin heading4;
-			margin-bottom: 12px;
+			margin: 0 0 12px;
+			padding: 0;
 		}
 		p {
 			@mixin body3;
+			margin: 0;
+			padding: 0;
+		}
+	}
+
+	.images {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		margin-bottom: 72px;
+
+		img {
+			--image-width: 100;
+			width: calc(var(--image-width) * 1%);
 		}
 	}
 </style>

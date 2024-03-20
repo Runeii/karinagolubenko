@@ -53,5 +53,9 @@
 		margin: 0 auto auto;
 		padding: 0 20px;
 		width: 100%;
+
+		@media (min-width: 720px) {
+			padding: 0 40px;
+		}
 	}
 </style>
