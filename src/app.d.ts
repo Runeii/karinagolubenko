@@ -17,6 +17,11 @@ declare global {
     isPrivate: boolean;
     content: string;
   }
+
+  interface Error {
+    code: string;
+    message: string;
+  }
 }
 
 export { };
