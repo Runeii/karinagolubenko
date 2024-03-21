@@ -38,6 +38,7 @@ export const GET: RequestHandler = async ({ setHeaders, request }) => {
   }
 
   const image = await loadImage('https://karinagolubenko.vercel.app/projects/A53f5e5fa274429c1dd2229a9acbeff3%20(1).png');
+  console.log(url, 'https://karinagolubenko.vercel.app/projects/A53f5e5fa274429c1dd2229a9acbeff3%20(1).png')
   const pixellatedImage = await createPixellatedImage(image, 300);
 
   setHeaders({
