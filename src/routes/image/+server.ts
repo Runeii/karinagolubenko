@@ -6,7 +6,7 @@ const loadImageHelper = async (src: string) => {
   return new Promise<Image>((resolve) => {
     const img = new Image();
     img.onload = () => resolve(img);
-    img.src = src;
+    img.src = 'https://karinagolubenko.vercel.app/projects/A53f5e5fa274429c1dd2229a9acbeff3%20(1).png';
     console.log(img.src)
   });
 }
