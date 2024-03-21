@@ -6,7 +6,8 @@ const loadImageHelper = async (src: string) => {
   return new Promise<Image>((resolve) => {
     const img = new Image();
     img.onload = () => resolve(img);
-    img.src = `./static${src}`;
+    img.src = src;
+    console.log(img.src)
   });
 }
 
