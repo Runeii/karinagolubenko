@@ -32,13 +32,17 @@ const createPixellatedImage = async (image: Image, pixelSize = 80) => {
 
 export const GET: RequestHandler = async ({ setHeaders, request }) => {
   const hash = new URL(request.url).searchParams.get('hash');
-  const url = atob(hash || '');
-  if (!url) {
+  const src = atob(hash || '');
+
+  if (!src) {
     return error(400, 'Bad Request');
   }
 
-  const image = await loadImage(url);
-  console.log(url, 'https://karinagolubenko.vercel.app/projects/A53f5e5fa274429c1dd2229a9acbeff3%20(1).png')
+  const url = new URL(request.url);
+  url.pathname = src;
+  url.searchParams.delete('hash');
+
+  const image = await loadImage(url.href);
   const pixellatedImage = await createPixellatedImage(image, 300);
 
   setHeaders({
