@@ -7,7 +7,7 @@
 <footer class="footer">
 	<div class="contact">
 		<p class="heading">Get in touch:</p>
-		<a href={content.email}>{content.email}</a><br />
+		<a href={`mailto:${content.email}`}>{content.email}</a><br />
 		{@html links}
 	</div>
 	<div class="colophon">
