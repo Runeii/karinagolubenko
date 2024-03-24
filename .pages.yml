@@ -82,6 +82,18 @@ content:
             type: object
             list: true
             fields:
+                - name: media
+                  label: Featured media
+                  type: object
+                  fields:
+                    - name: image
+                      label: Image
+                      type: image
+                      options: { input: static/projects, output: /projects }
+                    - name: video
+                      label: Video
+                      type: string
+                      description: "Video ID from Bunny CDN eg: 5e411680-14fe-4df5-aed4-1a5369f34c89"
                - name: image
                  label: Image
                  type: image
