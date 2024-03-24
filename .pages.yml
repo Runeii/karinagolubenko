@@ -82,9 +82,17 @@ content:
             type: object
             list: true
             fields:
-                - name: media
-                  label: Media
-                  type: object
+              - name: media
+                label: Media
+                type: object
+                fields:
+                  - name: image
+                    label: Image
+                    type: image
+                    options: { input: static/projects, output: /projects }
+                  - name: video
+                    label: Video
+                    type: string
                - name: caption
                  label: Caption
                  type: string
