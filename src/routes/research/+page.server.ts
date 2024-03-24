@@ -1,17 +1,17 @@
 import type { PageServerLoad } from '../$types';
+import { parseMediaBlock } from '../../utils';
 
-export const load: PageServerLoad = async () => {
+export const load: PageServerLoad = async ({ fetch }) => {
   const research = await import.meta.glob('../../content/research/*.json');
   const data = await Promise.all(Object.keys(research).map(async (project) => {
     const slug = project.split('/').pop()?.split('.').shift() ?? '';
 
     const module = (await import(`../../content/research/${slug}.json`)).default;
     const prettySlug = `/research/${slug.replace('research-', '')}`;
-    const img = await import(`../../../static/${module.image}?enhanced`);
 
     return {
       ...module,
-      image: img.default,
+      featuredMedia: await parseMediaBlock(module.featuredMedia, fetch),
       slug: prettySlug,
     }
   }));

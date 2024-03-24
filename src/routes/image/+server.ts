@@ -2,15 +2,6 @@ import { error } from '@sveltejs/kit';
 import type { RequestHandler } from './$types';
 import { createCanvas, Image, loadImage } from '@napi-rs/canvas';
 
-const loadImageHelper = async (src: string) => {
-  return new Promise<Image>((resolve) => {
-    const img = new Image();
-    img.onload = () => resolve(img);
-    img.src = 'https://karinagolubenko.vercel.app/projects/A53f5e5fa274429c1dd2229a9acbeff3%20(1).png';
-    console.log(img.src)
-  });
-}
-
 const createPixellatedImage = async (image: Image, pixelSize = 80) => {
   const canvas = createCanvas(image.width, image.height);
   const ctx = canvas.getContext('2d');
@@ -43,7 +34,7 @@ export const GET: RequestHandler = async ({ setHeaders, request }) => {
   url.searchParams.delete('hash');
 
   const image = await loadImage(url.href);
-  const pixellatedImage = await createPixellatedImage(image, 300);
+  const pixellatedImage = await createPixellatedImage(image, 50);
 
   setHeaders({
     'Content-Type': 'image/png',

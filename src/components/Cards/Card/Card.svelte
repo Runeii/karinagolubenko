@@ -1,8 +1,9 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import Visual from '../../Visual/Visual.svelte';
 
 	export let title: string;
-	export let image: string;
+	export let visual: MediaBlock | string;
 	export let description: string;
 	export let slug: string;
 	export let isPrivate: boolean;
@@ -10,10 +11,10 @@
 
 <a href={slug} class="link">
 	<article class={`card ${isPrivate && 'isPrivate'}`}>
-		{#if isPrivate}
-			<img src={image.replace('static/', '')} alt={title} class="image" />
+		{#if typeof visual === 'string'}
+			<img src={visual.replace('static/', '')} alt={title} class="image" />
 		{:else}
-			<enhanced:img src={image} alt={title} class="image" />
+			<Visual {visual} alt={title} class="image" />
 		{/if}
 		<h1 class="title">{title}</h1>
 		<p class="description">{description}</p>

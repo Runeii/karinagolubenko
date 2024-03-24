@@ -9,7 +9,7 @@
 		<Card
 			isPrivate={project.isPrivate}
 			title={project.title}
-			image={project.image}
+			visual={project.featuredMedia}
 			description={project.description}
 			slug={project.slug}
 		/>

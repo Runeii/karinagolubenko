@@ -10,7 +10,7 @@ declare global {
   }
 
   type Project = {
-    image: string;
+    featuredMedia: MediaBlock;
     slug: string;
     title: string;
     description: string;
