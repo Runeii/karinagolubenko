@@ -132,7 +132,7 @@ content:
           - name: image
             label: Image
             type: image
-            options: { input: static/projects, output: /projects }
+            options: { input: static/research, output: /research }
           - name: video
             label: Video
             type: string
@@ -168,7 +168,7 @@ content:
                   - name: image
                     label: Image
                     type: image
-                    options: { input: static/projects, output: /projects }
+                    options: { input: static/research, output: /research }
                   - name: video
                     label: Video
                     type: string
