@@ -50,9 +50,41 @@
       "visuals": [
         {
           "media": {
-            "image": "/projects/Rectangle 75.png"
+            "image": "/projects/Bridal Forest/Boucheron_1080px_Shot_02.PNG"
           },
-          "caption": "The Wishing Tree invites couples to write their wishes, casting them onto a physical birch with a simple gesture – ‘tying the knot’, that forges a lasting memory of a couple obtaining their Boucheron wedding bands. ",
+          "caption": "01 Idle Mode",
+          "width": 100,
+          "marginLeft": 0
+        },
+        {
+          "media": {
+            "image": "/projects/Bridal Forest/Boucheron_1080px_Shot_03.PNG"
+          },
+          "caption": "02 Writing the Wish",
+          "width": 100,
+          "marginLeft": 0
+        },
+        {
+          "media": {
+            "image": "/projects/Bridal Forest/Boucheron_1080px_Shot_04.PNG"
+          },
+          "caption": "03 Tying the knot",
+          "width": 100,
+          "marginLeft": 0
+        },
+        {
+          "media": {
+            "image": "/projects/Bridal Forest/Boucheron_1080px_Shot_07.PNG"
+          },
+          "caption": "04 Generated light & sound",
+          "width": 100,
+          "marginLeft": 0
+        },
+        {
+          "media": {
+            "image": "/projects/Bridal Forest/Boucheron_1080px_Shot_09.png"
+          },
+          "caption": "05 Handover",
           "width": 100,
           "marginLeft": 0
         }
@@ -60,8 +92,8 @@
     },
     {
       "text": {
-        "heading": "Process",
-        "text": "Rather than seeking alignment on fully developed concepts we ideated quickly, tested ideas, validated the concepts with hotel's guests, and delivered rapid prototypes to determine the potential of an idea. The final insights and concept demos were shared with the client as part of the creative board meetings."
+        "heading": "End Result",
+        "text": "This ritual offers a real-time interaction between the space and the people in it, but also invites customers to take home a tangible memory of their ring-buying experience. Scanning a QR code, they can download a digital version of their wish to keep forever."
       },
       "visuals": [
         {
