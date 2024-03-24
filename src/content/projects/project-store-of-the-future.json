@@ -3,7 +3,7 @@
   "isPrivate": true,
   "title": "A demo case study",
   "description": "Interactive in-store installation for Boucheron",
-  "media": {
+  "featuredMedia": {
     "image": "/projects/Rectangle 75.png",
     "video": "5e411680-14fe-4df5-aed4-1a5369f34c89"
   },
@@ -22,7 +22,7 @@
         "heading": "Insight",
         "text": "A memorable hotel stay typically promises luxury, but how can we elevate it to offer a real wellness experience with citizenM's light-hearted and humorous attitude towards standard hospitality 'promises'?"
       },
-      "images": [
+      "visuals": [
         {
           "width": 100,
           "marginLeft": 0
@@ -34,11 +34,13 @@
         "heading": "Idea",
         "text": "When our team at Random Studio took on the challenge of redefining hotel experience for citizenM, we aimed to enhance their room's inherent strengths to provide value beyond existing apps and travel gadgets. "
       },
-      "images": [
+      "visuals": [
         {
-          "image": "/projects/Portfolio External (1).png",
-          "width": 66,
-          "marginLeft": 0
+          "media": {
+            "image": "/projects/Portfolio External (1).png"
+          },
+          "width": 60,
+          "marginLeft": 20
         }
       ]
     },
@@ -47,9 +49,11 @@
         "heading": "End Result",
         "text": "The result is a  personalised collection of well-being moments catered towards alleviating travel fatigue. These moments are complimentary with a citizenM room and can be accessed through the app. Each moment is has its own distinctive scenography, which is brought to life within the physical space of the room."
       },
-      "images": [
+      "visuals": [
         {
-          "image": "/projects/Milan-03 3.png",
+          "media": {
+            "image": "/projects/Milan-03 3.png"
+          },
           "width": 100,
           "marginLeft": 0
         }
@@ -60,8 +64,32 @@
         "heading": "Process",
         "text": "Rather than seeking alignment on fully developed concepts we ideated quickly, tested ideas, validated the concepts with hotel's guests, and delivered rapid prototypes to determine the potential of an idea. The final insights and concept demos were shared with the client as part of the creative board meetings."
       },
-      "images": [
+      "visuals": [
         {
+          "media": {
+            "image": "/projects/Portfolio External (2).png"
+          },
+          "width": 100,
+          "marginLeft": 0
+        },
+        {
+          "media": {
+            "image": "/projects/Shower Mockup 01.png"
+          },
+          "width": 100,
+          "marginLeft": 0
+        },
+        {
+          "media": {
+            "image": "/projects/Rejuvenating Shower.png"
+          },
+          "width": 100,
+          "marginLeft": 0
+        },
+        {
+          "media": {
+            "image": "/projects/Rejuvenating Shower 27 2.png"
+          },
           "width": 100,
           "marginLeft": 0
         }
