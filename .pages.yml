@@ -77,8 +77,8 @@ content:
                - name: text
                  label: Text
                  type: text
-          - name: images
-            label: Images
+          - name: visual
+            label: Visuals
             type: object
             list: true
             fields:
