@@ -46,7 +46,17 @@ content:
       - { name: isPrivate, label: Is Private?, type: boolean }
       - { name: title, label: Title, type: string }
       - { name: description, label: Description, type: string }
-      - { name: image, label: Image, type: image, list: false, options: { input: static/projects, output: /projects } }
+      - name: media
+        label: Feature media
+        type: object
+        fields:
+          - name: image
+            label: Image
+            type: image
+            options: { input: static/projects, output: /projects }
+          - name: video
+            label: Video
+            type: string
       - { name: year, label: Year, type: string }
       - { name: tags, label: Tags, type: string, list: true }
       - { name: credits, label: Credits, type: string }
