@@ -93,17 +93,17 @@ content:
                   - name: video
                     label: Video
                     type: string
-               - name: caption
-                 label: Caption
-                 type: string
-               - name: width
-                 label: Width (%)
-                 type: number
-                 default: 100
-               - name: marginLeft
-                 label: Margin Left (%)
-                 type: number
-                 default: 0
+              - name: caption
+                label: Caption
+                type: string
+              - name: width
+                label: Width (%)
+                type: number
+                default: 100
+              - name: marginLeft
+                label: Margin Left (%)
+                type: number
+                default: 0
                  
       
   - name: research
