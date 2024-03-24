@@ -1,9 +1,11 @@
 {
   "order": "1",
-  "isPrivate": true,
-  "title": "A demo case study",
+  "isPrivate": false,
+  "title": "Bridal Forest",
   "description": "Interactive in-store installation for Boucheron",
-  "image": "/projects/Rectangle 75.png",
+  "featuredMedia": {
+    "image": "/projects/Rectangle 75.png"
+  },
   "year": "2023",
   "tags": [
     "UI/UX Design",
@@ -12,14 +14,14 @@
     "Prototyping"
   ],
   "credits": "As part of Random Studio for Boucheron",
-  "lede": "As a member of the Experience Design team at Random Studio, I contributed to the creation of nature-themed digital intervention for Boucheron's flagship store in Ginza, Japan. ",
+  "lede": "<p>As a member of the Experience Design team at Random Studio, I contributed to the creation of nature-themed digital intervention for Boucheron's flagship store in Ginza, Japan.</p>",
   "blocks": [
     {
       "text": {
         "heading": "Insight",
-        "text": "A memorable hotel stay typically promises luxury, but how can we elevate it to offer a real wellness experience with citizenM's light-hearted and humorous attitude towards standard hospitality 'promises'?"
+        "text": "We were tasked to infuse emotional depth into the shopping experience, with a focus on transforming the purchase of a wedding ring into a meaningful and personal moment for customers.  "
       },
-      "images": [
+      "visuals": [
         {
           "width": 100,
           "marginLeft": 0
@@ -29,9 +31,9 @@
     {
       "text": {
         "heading": "Idea",
-        "text": "When our team at Random Studio took on the challenge of redefining hotel experience for citizenM, we aimed to enhance their room's inherent strengths to provide value beyond existing apps and travel gadgets. "
+        "text": "The Bridal Forest  is an interactive installation that exists as a poetic blend of tradition and technology. Inspired by the Japanese Tanabata tradition, it offers couples a unique ritual as they choose their wedding rings. "
       },
-      "images": [
+      "visuals": [
         {
           "width": 100,
           "marginLeft": 0
@@ -43,8 +45,12 @@
         "heading": "End Result",
         "text": "The result is a  personalised collection of well-being moments catered towards alleviating travel fatigue. These moments are complimentary with a citizenM room and can be accessed through the app. Each moment is has its own distinctive scenography, which is brought to life within the physical space of the room."
       },
-      "images": [
+      "visuals": [
         {
+          "media": {
+            "image": "/projects/Rectangle 75.png"
+          },
+          "caption": "The Wishing Tree invites couples to write their wishes, casting them onto a physical birch with a simple gesture – ‘tying the knot’, that forges a lasting memory of a couple obtaining their Boucheron wedding bands. ",
           "width": 100,
           "marginLeft": 0
         }
@@ -55,7 +61,7 @@
         "heading": "Process",
         "text": "Rather than seeking alignment on fully developed concepts we ideated quickly, tested ideas, validated the concepts with hotel's guests, and delivered rapid prototypes to determine the potential of an idea. The final insights and concept demos were shared with the client as part of the creative board meetings."
       },
-      "images": [
+      "visuals": [
         {
           "width": 100,
           "marginLeft": 0
