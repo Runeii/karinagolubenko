@@ -122,6 +122,7 @@ content:
         order: asc
     fields:
       - { name: order, label: Order, type: number }
+      - { name: isPrivate, label: Is Private?, type: boolean }
       - { name: title, label: Title, type: string }
       - { name: description, label: Description, type: string }
       - name: featuredMedia
@@ -131,9 +132,55 @@ content:
           - name: image
             label: Image
             type: image
-            options: { input: static/research, output: /research }
+            options: { input: static/projects, output: /projects }
           - name: video
             label: Video
             type: string
             description: "Video ID from Bunny CDN eg: 5e411680-14fe-4df5-aed4-1a5369f34c89"
+      - { name: year, label: Year, type: string }
+      - { name: tags, label: Tags, type: string, list: true }
+      - { name: credits, label: Credits, type: string }
+      - { name: lede, label: Lede, type: rich-text, options: { format: html, image: false } }
+      - name: blocks
+        label: Content Blocks
+        type: object
+        list: true
+        fields:
+          - name: text
+            label: Text
+            type: object
+            fields:
+               - name: heading
+                 label: Heading
+                 type: string
+               - name: text
+                 label: Text
+                 type: text
+          - name: visuals
+            label: Visuals
+            type: object
+            list: true
+            fields:
+              - name: media
+                label: Media
+                type: object
+                fields:
+                  - name: image
+                    label: Image
+                    type: image
+                    options: { input: static/projects, output: /projects }
+                  - name: video
+                    label: Video
+                    type: string
+              - name: caption
+                label: Caption
+                type: string
+              - name: width
+                label: Width (%)
+                type: number
+                default: 100
+              - name: marginLeft
+                label: Margin Left (%)
+                type: number
+                default: 0
 
