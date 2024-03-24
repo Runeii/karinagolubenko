@@ -7,9 +7,11 @@ export const load: PageServerLoad = async () => {
 
     const module = (await import(`../../content/research/${slug}.json`)).default;
     const prettySlug = `/research/${slug.replace('research-', '')}`;
+    const img = await import(`../../../static/${module.image}?enhanced`);
 
     return {
       ...module,
+      image: img.default,
       slug: prettySlug,
     }
   }));

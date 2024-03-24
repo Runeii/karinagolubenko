@@ -6,13 +6,15 @@
 	export let description: string;
 	export let slug: string;
 	export let isPrivate: boolean;
-
-	let imageSrc = image.replace('static/', '');
 </script>
 
 <a href={slug} class="link">
 	<article class={`card ${isPrivate && 'isPrivate'}`}>
-		<img src={imageSrc} alt={title} class="image" />
+		{#if isPrivate}
+			<img src={image.replace('static/', '')} alt={title} class="image" />
+		{:else}
+			<enhanced:img src={image} alt={title} class="image" />
+		{/if}
 		<h1 class="title">{title}</h1>
 		<p class="description">{description}</p>
 	</article>
@@ -29,10 +31,9 @@
 		width: 100%;
 	}
 	.image {
-		aspect-ratio: 342 / 192;
-		object-fit: cover;
-		object-position: center center;
 		margin-bottom: 16px;
+		height: auto;
+		width: 100%;
 
 		@media (min-width: 720px) {
 			margin-bottom: 32px;

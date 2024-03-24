@@ -1,6 +1,5 @@
 <script lang="ts">
 	import type { PageData } from '$types';
-	import Card from '../../components/Cards/Card/Card.svelte';
 	import Cards from '../../components/Cards/Cards.svelte';
 	import NarrowLayout from '../../components/NarrowLayout/NarrowLayout.svelte';
 	export let data: PageData;

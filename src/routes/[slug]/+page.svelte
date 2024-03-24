@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { PageData } from '$types';
+	import { onMount } from 'svelte';
 	import Tag from '../../components/Tags/Tags.svelte';
 	import WideLayout from '../../components/WideLayout/WideLayout.svelte';
 
@@ -9,7 +10,12 @@
 <WideLayout>
 	<h1 class="title">{data.title}</h1>
 	<p class="subtitle">{data.description}</p>
-	<img class="image" src={data.image} alt={data.title} />
+	<enhanced:img
+		class="image"
+		src={data.image}
+		alt={data.title}
+		sizes="(min-width:1440px) 1440px, 100vw"
+	/>
 	<dl class="meta">
 		<div class="year">
 			<dt>Year</dt>
@@ -40,7 +46,9 @@
 			{#if block.images.filter((image) => image.image).length > 0}
 				<div class="images">
 					{#each block.images as image}
-						<img src={image.image} alt="" style={`--image-width: ${image.width}`} />
+						<div class="single-image" style={`--image-width: ${image.width}`}>
+							<enhanced:img src={image.image} alt="" />
+						</div>
 					{/each}
 				</div>
 			{/if}
@@ -73,7 +81,9 @@
 
 	.image {
 		width: 100%;
-		margin-bottom: 28px;
+		height: auto;
+		margin-bottom: 16px;
+
 		@media (min-width: 720px) {
 			margin-bottom: 44px;
 		}
@@ -82,11 +92,17 @@
 	.meta {
 		@mixin body4;
 		display: grid;
-		grid-template-columns: 16% 25% 9% 50%;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-areas:
+			'year credits'
+			'tags tags';
 		row-gap: 24px;
 		margin: 0 0 56px;
+
 		@media (min-width: 720px) {
 			@mixin body3;
+			grid-template-columns: 16% 25% 9% 50%;
+			grid-template-areas: 'year credits . tags';
 			margin-bottom: 82px;
 		}
 
@@ -98,28 +114,37 @@
 			padding: 0;
 			margin: 0;
 		}
+		.year {
+			grid-area: year;
+		}
+		.credits {
+			grid-area: credits;
+		}
 		:global(.tags) {
-			grid-column: 4 / 5;
+			grid-area: tags;
 		}
 	}
 
 	.lede {
 		@mixin heading4;
 		margin: 0 auto 56px;
-		width: 82%;
+		width: 100%;
 
 		@media (min-width: 720px) {
 			@mixin heading2;
+			width: 82%;
 			margin-bottom: 72px;
 		}
 	}
 
 	.text {
-		margin-bottom: 80px;
-		width: 40%;
+		margin-bottom: 56px;
+		width: 100%;
 
 		@media (min-width: 720px) {
 			margin-left: 40%;
+			margin-bottom: 80px;
+			width: 40%;
 		}
 
 		h2 {
@@ -139,11 +164,23 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
-		margin-bottom: 72px;
+		margin-bottom: 56px;
+		@media (min-width: 720px) {
+			margin-bottom: 72px;
+		}
+
+		.single-image {
+			--image-width: 100;
+			width: 100%;
+			height: auto;
+			@media (min-width: 720px) {
+				width: calc(var(--image-width) * 1%);
+			}
+		}
 
 		img {
-			--image-width: 100;
-			width: calc(var(--image-width) * 1%);
+			width: 100%;
+			height: auto;
 		}
 	}
 </style>

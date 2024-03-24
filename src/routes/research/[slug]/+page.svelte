@@ -1,6 +1,5 @@
 <script lang="ts">
 	import type { PageData } from '$types';
-	import Tag from '../../../components/Tags/Tags.svelte';
 	import WideLayout from '../../../components/WideLayout/WideLayout.svelte';
 
 	export let data: PageData;
@@ -9,7 +8,7 @@
 <WideLayout>
 	<h1 class="title">{data.title}</h1>
 	<p class="subtitle">{data.description}</p>
-	<img class="image" src={data.image} alt={data.title} />
+	<enhanced:img class="image" src={data.image} alt={data.title} />
 </WideLayout>
 
 <style lang="postcss">
@@ -37,6 +36,7 @@
 
 	.image {
 		width: 100%;
+		height: auto;
 	}
 
 	.meta {

@@ -22,7 +22,30 @@ export const load: PageServerLoad = async ({ cookies, params }) => {
     return;
   }
 
+  const img = await import(`../../../static/${data.image}?enhanced`);
+
+  const blocks = await Promise.all(data.blocks.map(async (block) => {
+    const images = await Promise.all(block.images.map(async (image) => {
+      if (!image.image) {
+        return undefined;
+      }
+
+      const img = await import(`../../../static/${image.image}?enhanced`);
+
+      return {
+        ...image,
+        image: img.default,
+      };
+    }));
+    return {
+      ...block,
+      images: images.filter(value => value),
+    };
+  }));
+
   return {
     ...data,
+    blocks,
+    image: img.default,
   };
 };
