@@ -3,6 +3,8 @@
 	import { onMount } from 'svelte';
 	import Tag from '../../components/Tags/Tags.svelte';
 	import WideLayout from '../../components/WideLayout/WideLayout.svelte';
+	import Video from '../../components/Video/Video.svelte';
+	import Visual from '../../components/Visual/Visual.svelte';
 
 	export let data: PageData;
 </script>
@@ -10,12 +12,7 @@
 <WideLayout>
 	<h1 class="title">{data.title}</h1>
 	<p class="subtitle">{data.description}</p>
-	<enhanced:img
-		class="image"
-		src={data.image}
-		alt={data.title}
-		sizes="(min-width:1440px) 1440px, 100vw"
-	/>
+	<Visual class="featured" visual={data.featuredMedia} />
 	<dl class="meta">
 		<div class="year">
 			<dt>Year</dt>
@@ -43,11 +40,17 @@
 					{/if}
 				</div>
 			{/if}
-			{#if block.images.filter((image) => image.image).length > 0}
-				<div class="images">
-					{#each block.images as image}
-						<div class="single-image" style={`--image-width: ${image.width}`}>
-							<enhanced:img src={image.image} alt="" />
+			{#if block.visuals.length > 0}
+				<div class={`visuals ${block.visuals.length > 3 && 'hasMany'}`}>
+					{#each block.visuals as visual}
+						<div
+							class="single-visual"
+							style={`--visual-width: ${visual.width}; --margin-left: ${visual.marginLeft}`}
+						>
+							<Visual visual={visual.media} />
+							{#if visual.caption}
+								<p>{visual.caption}</p>
+							{/if}
 						</div>
 					{/each}
 				</div>
@@ -79,7 +82,7 @@
 		}
 	}
 
-	.image {
+	.featured {
 		width: 100%;
 		height: auto;
 		margin-bottom: 16px;
@@ -159,28 +162,48 @@
 		}
 	}
 
-	.images {
+	.visuals {
 		width: 100%;
 		display: flex;
 		flex-direction: row;
-		justify-content: center;
+		justify-content: space-between;
 		margin-bottom: 56px;
+		column-gap: 16px;
+
 		@media (min-width: 720px) {
 			margin-bottom: 72px;
 		}
 
-		.single-image {
-			--image-width: 100;
+		.single-visual {
+			--visual-width: 100;
+			--margin-left: 0;
 			width: 100%;
 			height: auto;
+
 			@media (min-width: 720px) {
-				width: calc(var(--image-width) * 1%);
+				--margin-base-unit: ((100vw - 80px) / 100);
+				width: calc(var(--visual-width) * 1%);
+				margin-left: calc(var(--margin-left) * var(--margin-base-unit));
+			}
+
+			@media (min-width: 1520px) {
+				--margin-base-unit: (1440px / 100);
 			}
 		}
 
-		img {
-			width: 100%;
-			height: auto;
+		@media (max-width: 720px) {
+			&.hasMany {
+				overflow-x: auto;
+				.single-visual {
+					min-width: 45%;
+				}
+			}
+		}
+
+		p {
+			@mixin body4;
+			padding: 0;
+			margin: 8px 0 0;
 		}
 	}
 </style>

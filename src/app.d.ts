@@ -22,6 +22,18 @@ declare global {
     code: string;
     message: string;
   }
+
+  type UnparsedMediaBlock = {
+    image: string;
+    video: string;
+  }
+
+
+  type MediaBlock = {
+    image: string;
+    video: BunnyVideo;
+  }
+
 }
 
 export { };

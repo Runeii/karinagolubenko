@@ -1,9 +1,9 @@
 import { error, redirect } from '@sveltejs/kit';
 import type { PageServerLoad } from '../$types';
 import { PASSWORD } from '$env/static/private'
-import { hashString } from '../../utils';
+import { hashString, parseMediaBlock } from '../../utils';
 
-export const load: PageServerLoad = async ({ cookies, params }) => {
+export const load: PageServerLoad = async ({ cookies, fetch, params }) => {
   let data;
   try {
     data = (await import(`../../content/projects/project-${params.slug}.json`)).default;
@@ -22,30 +22,25 @@ export const load: PageServerLoad = async ({ cookies, params }) => {
     return;
   }
 
-  const img = await import(`../../../static/${data.image}?enhanced`);
-
   const blocks = await Promise.all(data.blocks.map(async (block) => {
-    const images = await Promise.all(block.images.map(async (image) => {
-      if (!image.image) {
-        return undefined;
-      }
+    const visuals = await Promise.all(block.visuals.map(async (visual) => {
 
-      const img = await import(`../../../static/${image.image}?enhanced`);
-
+      const media = await parseMediaBlock(visual.media, fetch)
       return {
-        ...image,
-        image: img.default,
+        ...visual,
+        media,
       };
     }));
+
     return {
       ...block,
-      images: images.filter(value => value),
+      visuals: visuals.filter(value => value && value.media),
     };
   }));
 
   return {
     ...data,
     blocks,
-    image: img.default,
+    featuredMedia: await parseMediaBlock(data.featuredMedia, fetch)
   };
 };
