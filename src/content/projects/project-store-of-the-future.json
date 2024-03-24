@@ -97,6 +97,52 @@
       },
       "visuals": [
         {
+          "media": {
+            "image": "/projects/Bridal Forest/Random Studio Boucheron Ginza3.png"
+          },
+          "width": 100,
+          "marginLeft": 0
+        },
+        {
+          "media": {
+            "image": "/projects/Bridal Forest/230908 Boucheron Tokyo-185.jpg"
+          },
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "text": {
+        "text": "A user journey and intuitive UI for the embedded screen were designed to make the experience simple yet surprising for various types of guests, with an option to choose from Japanese, English or Korean languages. "
+      },
+      "visuals": [
+        {
+          "media": {
+            "image": "/projects/Bridal Forest/230908 Boucheron Tokyo-238.jpg"
+          },
+          "width": 100,
+          "marginLeft": 0
+        },
+        {
+          "media": {
+            "image": "/projects/Bridal Forest/230908 Boucheron Tokyo-217.jpg"
+          },
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "text": {
+        "heading": "Process",
+        "text": "I played an integral role in every stage of the project, from initial research and ideation to concept development. I led the creation of user journeys, prototyping, testing, and finalizing UI designs ready for development. Throughout the process, we constructed a prototype tree within the studio lab, facilitating continuous testing and refinement of designs to ensure seamless integration of physical and digital components."
+      },
+      "visuals": [
+        {
+          "media": {
+            "image": "/projects/Bridal Forest/230908 Boucheron Tokyo-238.jpg"
+          },
           "width": 100,
           "marginLeft": 0
         }
