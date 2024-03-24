@@ -83,7 +83,7 @@ content:
             list: true
             fields:
                 - name: media
-                  label: Featured media
+                  label: Media
                   type: object
                   fields:
                     - name: image
@@ -93,10 +93,6 @@ content:
                     - name: video
                       label: Video
                       type: string
-               - name: image
-                 label: Image
-                 type: image
-                 options: { input: static/projects, output: /projects }
                - name: caption
                  label: Caption
                  type: string
