@@ -25,20 +25,21 @@
 	.link {
 		text-decoration: none;
 		color: inherit;
+
+		:global(.image) {
+			margin-bottom: 16px;
+			height: auto;
+			width: 100%;
+
+			@media (min-width: 720px) {
+				margin-bottom: 32px;
+			}
+		}
 	}
 	.card {
 		display: flex;
 		flex-direction: column;
 		width: 100%;
-	}
-	.image {
-		margin-bottom: 16px;
-		height: auto;
-		width: 100%;
-
-		@media (min-width: 720px) {
-			margin-bottom: 32px;
-		}
 	}
 	.title {
 		@mixin heading4;

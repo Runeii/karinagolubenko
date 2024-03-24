@@ -3,7 +3,6 @@
 	import Cards from '../../components/Cards/Cards.svelte';
 	import NarrowLayout from '../../components/NarrowLayout/NarrowLayout.svelte';
 	export let data: PageData;
-	console.log(data);
 </script>
 
 <NarrowLayout>
