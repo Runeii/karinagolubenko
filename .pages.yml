@@ -47,7 +47,7 @@ content:
       - { name: title, label: Title, type: string }
       - { name: description, label: Description, type: string }
       - name: media
-        label: Feature media
+        label: Featured media
         type: object
         fields:
           - name: image
