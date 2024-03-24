@@ -3,7 +3,10 @@
   "isPrivate": true,
   "title": "Store of the Future",
   "description": "In-store digital selling platform",
-  "image": "/projects/A53f5e5fa274429c1dd2229a9acbeff3 (1).png",
+  "media": {
+    "image": "/projects/A53f5e5fa274429c1dd2229a9acbeff3 (1).png",
+    "video": "5e411680-14fe-4df5-aed4-1a5369f34c89"
+  },
   "year": "2023",
   "tags": [
     "UI/UX Design",
