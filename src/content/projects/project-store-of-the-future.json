@@ -69,6 +69,7 @@
           "media": {
             "image": "/projects/Portfolio External (2).png"
           },
+          "caption": "01 Field research and Ideating ",
           "width": 100,
           "marginLeft": 0
         },
@@ -76,6 +77,7 @@
           "media": {
             "image": "/projects/Shower Mockup 01.png"
           },
+          "caption": "02 Rapid prototyping and testing",
           "width": 100,
           "marginLeft": 0
         },
@@ -83,6 +85,7 @@
           "media": {
             "image": "/projects/Rejuvenating Shower.png"
           },
+          "caption": "03 High-fidelity storyboards",
           "width": 100,
           "marginLeft": 0
         },
@@ -90,6 +93,7 @@
           "media": {
             "image": "/projects/Rejuvenating Shower 27 2.png"
           },
+          "caption": "04 Desirability Validation",
           "width": 100,
           "marginLeft": 0
         }
