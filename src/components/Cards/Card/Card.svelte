@@ -1,18 +1,20 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import Visual from '../../Visual/Visual.svelte';
+	import PrivateImage from '../../PrivateImage/PrivateImage.svelte';
 
 	export let title: string;
-	export let visual: MediaBlock | string;
+	export let visual: MediaBlock;
 	export let description: string;
 	export let slug: string;
-	export let isPrivate: boolean;
+	//export let isPrivate: boolean;
+	const isPrivate = true;
 </script>
 
 <a href={slug} class="link">
 	<article class={`card ${isPrivate && 'isPrivate'}`}>
-		{#if typeof visual === 'string'}
-			<img src={visual.replace('static/', '')} alt={title} class="image" />
+		{#if isPrivate}
+			<PrivateImage {visual} alt={title} class="image" />
 		{:else}
 			<Visual {visual} alt={title} class="image" />
 		{/if}
