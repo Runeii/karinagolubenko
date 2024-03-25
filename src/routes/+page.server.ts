@@ -12,7 +12,7 @@ export const load: PageServerLoad = async ({ fetch }) => {
 
     const prettySlug = `/${slug.replace('project-', '')}`
 
-    const featuredMedia = module.isPrivate ? `/image?hash=${btoa(module.featuredMedia?.image)}` : parseMediaBlock(module.featuredMedia, fetch);
+    const featuredMedia = module.isPrivate ? `/image?hash=${btoa(module.featuredMedia?.image)}` : await parseMediaBlock(module.featuredMedia, fetch);
 
     return {
       ...module,

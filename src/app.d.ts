@@ -1,4 +1,7 @@
 // See https://kit.svelte.dev/docs/types#app
+
+import type { HTMLImgAttributes, HTMLSourceAttributes } from "svelte/elements";
+
 // for information about these interfaces
 declare global {
   namespace App {
@@ -30,7 +33,11 @@ declare global {
 
 
   type MediaBlock = {
-    image: string;
+    image: {
+      sources: HTMLSourceAttributes,
+      img: HTMLImgAttributes,
+    };
+    imageUrl: string;
     video: BunnyVideo;
   }
 

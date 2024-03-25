@@ -2,18 +2,50 @@
 	import { PUBLIC_BUNNY_CDN_HOSTNAME } from '$env/static/public';
 	import { onMount } from 'svelte';
 	import { getVideoDataById } from './getVideoDataById';
+	import Hls from 'hls.js';
 
 	export let video: BunnyVideo | undefined = undefined;
 	export let id: string | undefined = undefined;
 
 	let hasStartedPlaying = false;
 	let videoEl: HTMLVideoElement;
+
+	const getFallbackMp4Urls = (video: BunnyVideo) => {
+		const resolutions = video.availableResolutions.split(',');
+		if (!resolutions || resolutions.length === 0) {
+			return null;
+		}
+		return resolutions.map(
+			(res) => `https://${PUBLIC_BUNNY_CDN_HOSTNAME}/${video.guid}/play_${res}.mp4`
+		);
+	};
+
 	onMount(() => {
 		if (video || !id) {
 			return;
 		}
 		getVideoDataById(id).then((data) => {
 			video = data;
+			const src = `https://${PUBLIC_BUNNY_CDN_HOSTNAME}/${video.guid}/playlist.m3u8`;
+
+			if (!videoEl || !src) {
+				return;
+			}
+			if (videoEl.canPlayType('application/vnd.apple.mpegurl')) {
+				videoEl.src = src;
+				return;
+			}
+			if (Hls.isSupported()) {
+				var hls = new Hls();
+				hls.loadSource(src);
+				hls.attachMedia(videoEl);
+				return;
+			}
+			const fallbacks = getFallbackMp4Urls(video);
+			if (!fallbacks) {
+				return;
+			}
+			videoEl.src = fallbacks.reverse()[0];
 		});
 	});
 
@@ -29,18 +61,6 @@
 		};
 
 		return JSON.stringify(variables).replace(/["{}]/g, '').replace(/,/g, ';');
-	};
-
-	const getFallbackMp4Urls = (video: BunnyVideo) => {
-		const resolutions = video.availableResolutions.split(',');
-		if (!resolutions || resolutions.length === 0) {
-			return null;
-		}
-		return resolutions
-			.map((res) => {
-				return `<source src="https://${PUBLIC_BUNNY_CDN_HOSTNAME}/${video.guid}/play_${resolutions[0]}.mp4" type="video/mp4" />`;
-			})
-			.join('');
 	};
 
 	const handlePlay = () => {
@@ -75,14 +95,7 @@
 				on:playing={handlePlay}
 				on:click={handleClick}
 				bind:this={videoEl}
-			>
-				<source
-					src={`https://${PUBLIC_BUNNY_CDN_HOSTNAME}/${video.guid}/playlist.m3u8`}
-					type="application/x-mpegURL"
-				/>
-				{@html getFallbackMp4Urls(video)}
-				<track kind="captions" />
-			</video>
+			/>
 		{/if}
 		{#if video.thumbnailFileName}
 			<button on:click={handleThumbnailClick} class="thumbnail">
