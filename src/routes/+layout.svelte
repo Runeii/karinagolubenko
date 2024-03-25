@@ -46,6 +46,10 @@
 		:global(a) {
 			text-decoration: none;
 			color: currentColor;
+
+			&:hover {
+				font-style: italic;
+			}
 		}
 	}
 
