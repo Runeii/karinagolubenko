@@ -186,6 +186,14 @@
 			margin-bottom: 72px;
 		}
 
+		+ .visuals {
+			margin-top: -40px;
+
+			@media (min-width: 720px) {
+				margin-top: -56px;
+			}
+		}
+
 		.single-visual {
 			--visual-width: 100;
 			--margin-left: 0;
