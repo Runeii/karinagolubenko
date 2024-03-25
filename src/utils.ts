@@ -25,7 +25,7 @@ export const parseMediaBlock = async (block: UnparsedMediaBlock, fetchHandler: t
   const image = block.image ? await images[`../static${block.image}`]?.() as { default: HTMLImgAttributes } : undefined;
   const video = block.video ? await getVideoDataById(block.video, fetchHandler) : undefined;
   const simpleImgUrl = block.image;
-  console.log(image, simpleImgUrl)
+
   if (!image && !video && !simpleImgUrl) {
     return null;
   }

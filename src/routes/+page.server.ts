@@ -1,5 +1,6 @@
 import type { PageServerLoad } from './$types';
 import content from '../content/homepage.json';
+import { parseMediaBlock } from '../utils';
 
 export const load: PageServerLoad = async ({ fetch }) => {
   const projects = await import.meta.glob('../content/projects/*.json');
@@ -11,8 +12,8 @@ export const load: PageServerLoad = async ({ fetch }) => {
 
     const prettySlug = `/${slug.replace('project-', '')}`
 
-    //const featuredMedia = module.isPrivate ? `/image?hash=${btoa(module.featuredMedia?.image)}` : await parseMediaBlock(module.featuredMedia, fetch);
-    const featuredMedia = `/image?hash=${btoa(module.featuredMedia?.image)}`;
+    const featuredMedia = module.isPrivate ? `/image?hash=${btoa(module.featuredMedia?.image)}` : await parseMediaBlock(module.featuredMedia, fetch);
+    //const featuredMedia = `/image?hash=${btoa(module.featuredMedia?.image)}`;
 
     return {
       ...module,
