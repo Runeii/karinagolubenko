@@ -83,11 +83,19 @@
 			width: 100%;
 			padding: 16px 0;
 			background-color: var(--black);
-			border: none;
+			border: 1px solid transparent;
 			color: white;
+			transition: all 0.2s ease-out;
+			cursor: pointer;
 
 			@media (min-width: 540px) {
 				padding: 16px 200px;
+			}
+
+			&:hover {
+				background-color: white;
+				color: var(--black);
+				border: 1px solid var(--black);
 			}
 		}
 	}
