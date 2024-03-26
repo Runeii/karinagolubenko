@@ -35,6 +35,16 @@
       },
       "visuals": [
         {
+          "media": {
+            "video": "d7a679a5-5cff-4cf9-90b1-c5fb02163141"
+          },
+          "width": 100,
+          "marginLeft": 0
+        },
+        {
+          "media": {
+            "image": "/media/SFR/Board 5.jpeg"
+          },
           "width": 100,
           "marginLeft": 0
         }
