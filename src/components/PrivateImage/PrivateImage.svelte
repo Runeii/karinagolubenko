@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
+	import { onDestroy, onMount } from 'svelte';
 	import { drawPixellatedImage } from './utils';
 
 	export let visual: MediaBlock;
@@ -7,6 +7,8 @@
 	let canvasEl: HTMLCanvasElement;
 	let imageEl: HTMLImageElement;
 	let isProcessed = false;
+
+	let timeout: number;
 
 	const handleImageLoad = async () => {
 		const ctx = canvasEl.getContext('2d');
@@ -21,10 +23,9 @@
 		}
 		ctx.imageSmoothingEnabled = false;
 
-		let raf;
 		const handleTick = () => {
 			drawPixellatedImage(image, canvasEl, 40 + 40 * Math.abs(Math.cos(Date.now())));
-			raf = window.setTimeout(handleTick, 500);
+			timeout = window.setTimeout(handleTick, 500);
 		};
 		handleTick();
 	};
@@ -33,6 +34,10 @@
 		if (imageEl.complete) {
 			handleImageLoad();
 		}
+	});
+
+	onDestroy(() => {
+		window.clearTimeout(timeout);
 	});
 </script>
 

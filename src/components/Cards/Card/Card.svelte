@@ -7,8 +7,7 @@
 	export let visual: MediaBlock;
 	export let description: string;
 	export let slug: string;
-	//export let isPrivate: boolean;
-	const isPrivate = true;
+	export let isPrivate: boolean;
 </script>
 
 <a href={slug} class="link">
