@@ -17,6 +17,10 @@
   "lede": "On the occasion of Climate Week, Random Studio translated the ethos of AIR COMPANY into a spatial journey  introducing the company over the course of one night.",
   "blocks": [
     {
+      "text": {
+        "heading": "Insight",
+        "text": "Founded in 2019, Air Company is devoted to converting carbon waste into sustainable fuel through carbon utilisation technology. The event ‘Roadmap to Ending Extinction’ during New York Climate week needed to synthesise a wealth of complex information and research into a comprehensive experience. "
+      },
       "visuals": [
         {
           "width": 100,
