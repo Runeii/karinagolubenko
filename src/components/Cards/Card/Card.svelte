@@ -12,10 +12,12 @@
 
 <a href={slug} class="link">
 	<article class={`card ${isPrivate && 'isPrivate'}`}>
-		{#if isPrivate}
-			<PrivateImage {visual} alt={title} class="image" />
-		{:else}
-			<Visual {visual} alt={title} class="image" />
+		{#if visual}
+			{#if isPrivate}
+				<PrivateImage {visual} alt={title} class="image" />
+			{:else}
+				<Visual {visual} alt={title} class="image" />
+			{/if}
 		{/if}
 		<h1 class="title">{title}</h1>
 		<p class="description">{description}</p>
@@ -23,6 +25,19 @@
 </a>
 
 <style lang="postcss">
+	@keyframes expand-out {
+		to {
+			--start-width: 928;
+			--end-width: 1440;
+			scale: calc(var(--end-width) / var(--start-width));
+		}
+	}
+
+	:root::view-transition-old(card-expand) {
+		animation: 210ms cubic-bezier(0, 0, 0.2, 1) 90ms both expand-out;
+		transform-origin: top center;
+	}
+
 	.link {
 		text-decoration: none;
 		color: inherit;
