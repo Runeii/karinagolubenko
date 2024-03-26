@@ -6,10 +6,102 @@
   "featuredMedia": {
     "image": "/media/research/Green Duology/Green Duology-cover.png"
   },
+  "year": "2021–2022",
+  "tags": [
+    "Direction ",
+    "Research",
+    "Script",
+    "Film Editing"
+  ],
+  "credits": "Self-Initiated film",
+  "lede": "<p>What if our life is organised not on the scale of the human but the planet? </p>",
   "blocks": [
+    {
+      "text": {
+        "text": "As the temperature reaches the level of 2,3 degrees the planet struggles to breathe, forcing humanity to radically restructure the globe. The Great Terraforming project of planetary decarbonization unfolds as the only way to keep the Earth a liveable place."
+      },
+      "visuals": [
+        {
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "text": {
+        "heading": "Part I: Carbosyn",
+        "text": "The all-encompassing Internet of Carbon evolves a planetary infrastructure: from plants, forests and transport routes to farms, households and individuals – all is monitored for the decentralised system to track and account the carbon data. In the film, energy is extremely political. It raises the question of who should control the infrastructure, or rather the infrastructure is in control of our existence."
+      },
+      "visuals": [
+        {
+          "media": {
+            "image": "/media/research/Green Duology/carbosyn-1.png"
+          },
+          "width": 100,
+          "marginLeft": 0
+        },
+        {
+          "media": {
+            "image": "/media/research/Green Duology/carbosyn-4.jpg"
+          },
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
+    },
     {
       "visuals": [
         {
+          "media": {
+            "image": "/media/research/Green Duology/carbosyn-5.png"
+          },
+          "width": 100,
+          "marginLeft": 0
+        },
+        {
+          "media": {
+            "image": "/media/research/Green Duology/carbosyn-7.jpg"
+          },
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "text": {
+        "heading": "Part II: Permaland",
+        "text": "The second part of the duology zooms into the human-scale picture of the emerged world. Shot as a mockumentary, it unveils how the zero-carbon system is incorporated in our everyday. "
+      },
+      "visuals": [
+        {
+          "media": {
+            "image": "/media/research/Green Duology/MacBook Pro - 1 11.jpg"
+          },
+          "width": 100,
+          "marginLeft": 0
+        },
+        {
+          "media": {
+            "image": "/media/research/Green Duology/Rejuvenating Shower 27 3.jpg"
+          },
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "visuals": [
+        {
+          "media": {
+            "image": "/media/research/Green Duology/230703_CM_Shower_Mockup_01 2.jpg"
+          },
+          "width": 100,
+          "marginLeft": 0
+        },
+        {
+          "media": {
+            "image": "/media/research/Green Duology/MacBook Pro - 1 14.jpg"
+          },
           "width": 100,
           "marginLeft": 0
         }
