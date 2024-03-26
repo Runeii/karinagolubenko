@@ -36,7 +36,7 @@
       "visuals": [
         {
           "media": {
-            "image": "/projects/Bridal Forest/Random Studio Boucheron Ginza4.png"
+            "image": "/media/Bridal Forest/Random Studio Boucheron Ginza4.png"
           },
           "width": 100,
           "marginLeft": 0
@@ -50,7 +50,7 @@
       "visuals": [
         {
           "media": {
-            "image": "/projects/Bridal Forest/Boucheron_1080px_Shot_02-1.png"
+            "image": "/media/Bridal Forest/Boucheron_1080px_Shot_02-1.png"
           },
           "caption": "01 Idle Mode",
           "width": 100,
@@ -58,7 +58,7 @@
         },
         {
           "media": {
-            "image": "/projects/Bridal Forest/Boucheron_1080px_Shot_03-1.png"
+            "image": "/media/Bridal Forest/Boucheron_1080px_Shot_03-1.png"
           },
           "caption": "02 Writing the Wish",
           "width": 100,
@@ -66,7 +66,7 @@
         },
         {
           "media": {
-            "image": "/projects/Bridal Forest/Boucheron_1080px_Shot_04-1.png"
+            "image": "/media/Bridal Forest/Boucheron_1080px_Shot_04-1.png"
           },
           "caption": "03 Tying the knot",
           "width": 100,
@@ -74,7 +74,7 @@
         },
         {
           "media": {
-            "image": "/projects/Bridal Forest/Boucheron_1080px_Shot_07-1.png"
+            "image": "/media/Bridal Forest/Boucheron_1080px_Shot_07-1.png"
           },
           "caption": "04 Generated light & sound",
           "width": 100,
@@ -82,7 +82,7 @@
         },
         {
           "media": {
-            "image": "/projects/Bridal Forest/Boucheron_1080px_Shot_09.png"
+            "image": "/media/Bridal Forest/Boucheron_1080px_Shot_09.png"
           },
           "caption": "05 Handover",
           "width": 100,
@@ -98,14 +98,14 @@
       "visuals": [
         {
           "media": {
-            "image": "/projects/Bridal Forest/Random Studio Boucheron Ginza3.png"
+            "image": "/media/Bridal Forest/Random Studio Boucheron Ginza3.png"
           },
           "width": 100,
           "marginLeft": 0
         },
         {
           "media": {
-            "image": "/projects/Bridal Forest/230908 Boucheron Tokyo-185.jpg"
+            "image": "/media/Bridal Forest/230908 Boucheron Tokyo-185.jpg"
           },
           "width": 100,
           "marginLeft": 0
@@ -119,14 +119,14 @@
       "visuals": [
         {
           "media": {
-            "image": "/projects/Bridal Forest/230908 Boucheron Tokyo-238.jpg"
+            "image": "/media/Bridal Forest/230908 Boucheron Tokyo-238.jpg"
           },
           "width": 100,
           "marginLeft": 0
         },
         {
           "media": {
-            "image": "/projects/Bridal Forest/230908 Boucheron Tokyo-217.jpg"
+            "image": "/media/Bridal Forest/230908 Boucheron Tokyo-217.jpg"
           },
           "width": 100,
           "marginLeft": 0
@@ -141,7 +141,7 @@
       "visuals": [
         {
           "media": {
-            "image": "/projects/Bridal Forest/230908 Boucheron Tokyo-238.jpg"
+            "image": "/media/Bridal Forest/230908 Boucheron Tokyo-238.jpg"
           },
           "width": 100,
           "marginLeft": 0
