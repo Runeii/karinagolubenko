@@ -50,6 +50,21 @@
           "marginLeft": 0
         }
       ]
+    },
+    {
+      "text": {
+        "heading": "End Result",
+        "text": "The multi-device platform allows the store associates to quickly find requested items, check inventory stock, provide product information & styling advice, and assist customers in placing online orders if the desired product is not available in-store."
+      },
+      "visuals": [
+        {
+          "media": {
+            "video": "3bcfbafe-2a75-4a75-899b-75b5d56185ef"
+          },
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
     }
   ]
 }
