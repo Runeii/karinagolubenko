@@ -1,0 +1,25 @@
+{
+  "order": 4,
+  "isPrivate": false,
+  "title": "Roadmap to Ending Extinction",
+  "description": "Exhibition design for AIR COMPANY Innovation Summit",
+  "year": "2023",
+  "tags": [
+    "Exhibition Design",
+    "Graphic Design",
+    "User Journey",
+    "Motion"
+  ],
+  "credits": "As part of Random Studio for Air Company",
+  "lede": "On the occasion of Climate Week, Random Studio translated the ethos of AIR COMPANY into a spatial journey  introducing the company over the course of one night.",
+  "blocks": [
+    {
+      "visuals": [
+        {
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
+    }
+  ]
+}
