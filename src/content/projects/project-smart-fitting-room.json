@@ -17,6 +17,22 @@
   "lede": "As part of Digital Retail Experience team at Random Studio, I launched Smart Fitting Room pilot in two stores in Europe.",
   "blocks": [
     {
+      "text": {
+        "heading": "Insight",
+        "text": "Most of the traditional fitting rooms are generic and uninviting spaces. They can be time-consuming and frustrating, as customers often struggle to find the right size or style. "
+      },
+      "visuals": [
+        {
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "text": {
+        "heading": "Idea",
+        "text": "With integrated technologies such as RFID, controlled lighting and motion sensors, smart fitting room can provide a seamless shopping experience to aid clients in the search for their perfect fit, leading to increased conversion and sales for the retailer."
+      },
       "visuals": [
         {
           "width": 100,
