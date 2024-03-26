@@ -118,7 +118,7 @@ content:
   - name: research
     label: Research
     type: collection
-    path: src/content/research
+    path: src/content/media
     filename: research-{fields.title}.json
     format: json
     subfolders: false
