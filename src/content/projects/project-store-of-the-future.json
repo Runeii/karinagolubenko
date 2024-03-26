@@ -1,0 +1,16 @@
+{
+  "order": 2,
+  "isPrivate": true,
+  "title": "Store of the Future",
+  "description": "In-store digital selling platform",
+  "blocks": [
+    {
+      "visuals": [
+        {
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
+    }
+  ]
+}
