@@ -2,7 +2,7 @@
 	import Tag from '../Tags/Tags.svelte';
 	import WideLayout from '../WideLayout/WideLayout.svelte';
 	import Visual from '../Visual/Visual.svelte';
-	import SinglePageData from '../../content/projects/project-store-of-the-future.json';
+	import SinglePageData from '../../content/projects/project-bridal-forest.json';
 
 	export let data: Omit<Omit<typeof SinglePageData, 'featuredMedia'>, 'blocks'> & {
 		featuredMedia: MediaBlock;
