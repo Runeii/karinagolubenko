@@ -1,11 +1,19 @@
-import { parseMediaBlock } from '../../../utils';
-import type { PageLoad } from './$types';
+import { error } from '@sveltejs/kit';
+import { processSinglePage } from '../../[slug]/utils';
+import type { PageServerLoad } from './$types';
 
-export const load: PageLoad = async ({ fetch, params }) => {
-  const data = (await import(`../../../content/research/research-${params.slug}.json`)).default;
 
-  return {
-    ...data,
-    featuredMedia: await parseMediaBlock(data.featuredMedia, fetch),
+export const load: PageServerLoad = async (context) => {
+  const { params } = context;
+  let data;
+  try {
+    data = (await import(`../../../content/research/research-${params.slug}.json`)).default;
+
+  } catch (e) {
+    error(404, {
+      code: 404,
+      message: 'Not found',
+    });
   }
-};
+  return processSinglePage(data, context);
+}

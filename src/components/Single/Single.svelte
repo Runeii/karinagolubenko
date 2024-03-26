@@ -52,7 +52,7 @@
 					{/if}
 				</div>
 			{/if}
-			{#if block.visuals.length > 0}
+			{#if block.visuals.filter((visual) => visual.media).length > 0}
 				<div class={`visuals ${block.visuals.length > 3 && 'hasMany'}`}>
 					{#each block.visuals as visual}
 						<div
