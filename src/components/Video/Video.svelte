@@ -20,33 +20,37 @@
 		);
 	};
 
-	onMount(() => {
-		if (video || !id) {
+	onMount(async () => {
+		if (!id && !video) {
 			return;
 		}
-		getVideoDataById(id).then((data) => {
-			video = data;
-			const src = `https://${PUBLIC_BUNNY_CDN_HOSTNAME}/${video.guid}/playlist.m3u8`;
 
-			if (!videoEl || !src) {
-				return;
-			}
-			if (videoEl.canPlayType('application/vnd.apple.mpegurl')) {
-				videoEl.src = src;
-				return;
-			}
-			if (Hls.isSupported()) {
-				var hls = new Hls();
-				hls.loadSource(src);
-				hls.attachMedia(videoEl);
-				return;
-			}
-			const fallbacks = getFallbackMp4Urls(video);
-			if (!fallbacks) {
-				return;
-			}
-			videoEl.src = fallbacks.reverse()[0];
-		});
+		if (!video) {
+			video = await getVideoDataById(id);
+		}
+
+		const src = `https://${PUBLIC_BUNNY_CDN_HOSTNAME}/${video.guid}/playlist.m3u8`;
+
+		if (!videoEl || !src) {
+			console.log('no videoEl or src');
+			return;
+		}
+		if (videoEl.canPlayType('application/vnd.apple.mpegurl')) {
+			videoEl.src = src;
+			return;
+		}
+		if (Hls.isSupported()) {
+			var hls = new Hls();
+			hls.loadSource(src);
+			hls.attachMedia(videoEl);
+			return;
+		}
+		const fallbacks = getFallbackMp4Urls(video);
+		if (!fallbacks) {
+			return;
+		}
+		console.log('fallback');
+		videoEl.src = fallbacks.reverse()[0];
 	});
 
 	const getVideoStyleVariables = (video: BunnyVideo | undefined) => {
