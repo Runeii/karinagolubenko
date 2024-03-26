@@ -49,6 +49,28 @@
           "marginLeft": 0
         }
       ]
+    },
+    {
+      "text": {
+        "heading": "End Result",
+        "text": "Connected service allows customers to easily check and request alternative sizes and styles without having to leave the fitting room, saving their time and effort. Digital controls let them set the desired environment where they could feel most confident."
+      },
+      "visuals": [
+        {
+          "media": {
+            "video": "e263f303-4c90-443c-9f05-e2659a93fb80"
+          },
+          "width": 100,
+          "marginLeft": 0
+        },
+        {
+          "media": {
+            "video": "9b88b4be-058d-4698-9aac-f6ee004eb571"
+          },
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
     }
   ]
 }
