@@ -122,6 +122,9 @@
       },
       "visuals": [
         {
+          "media": {
+            "image": "/media/S&A/2266312.png"
+          },
           "width": 100,
           "marginLeft": 0
         }
