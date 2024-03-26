@@ -28,6 +28,18 @@
           "marginLeft": 0
         }
       ]
+    },
+    {
+      "text": {
+        "heading": "Idea",
+        "text": "Since joining as a Digital Experience designer, I've been part of The Store of the Future program, an innovation initiative that has played a key role in keeping the client at the forefront of integrating digital tools into physical stores. Our focus shifted from customer-facing interfaces to empowering store associates across the retail journey, ranging from shop floor automation to RFID integration, to loyalty program development."
+      },
+      "visuals": [
+        {
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
     }
   ]
 }
