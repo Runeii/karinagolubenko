@@ -111,6 +111,17 @@
           "marginLeft": 0
         }
       ]
+    },
+    {
+      "text": {
+        "text": "Following the pilot launch, we refined the experience based on interviews with store associates and data analytics reports. This iterative process formed a crucial part of our continuous development efforts, ensuring ongoing enhancement and optimization of the product."
+      },
+      "visuals": [
+        {
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
     }
   ]
 }
