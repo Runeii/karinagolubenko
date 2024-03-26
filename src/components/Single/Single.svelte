@@ -42,7 +42,7 @@
 	<p class="lede">{data.lede}</p>
 	{#if data.blocks}
 		{#each data.blocks as block}
-			{#if block.text.heading || block.text.text}
+			{#if block.text && (block.text.heading || block.text.text)}
 				<div class="text">
 					{#if block.text.heading}
 						<h2>{block.text.heading}</h2>
