@@ -79,6 +79,17 @@
           "marginLeft": 0
         }
       ]
+    },
+    {
+      "text": {
+        "text": "The resulting product, now in daily use by store associates, saves them 2 hours each day in locating requested items. The recent integration of the Stock Request feature has effectively reduced errors and the time required for requesting items from the stockroom, enabling store associates to allocate more time to the shop floor."
+      },
+      "visuals": [
+        {
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
     }
   ]
 }
