@@ -30,11 +30,15 @@
 			flex-direction: row;
 			margin: 120px 40px 60px;
 		}
-	}
-	:global(a) {
-		color: var(--dark-grey);
-		text-decoration: none;
-		display: inline-block;
+		:global(a) {
+			color: var(--dark-grey);
+			text-decoration: none;
+			display: inline-block;
+
+			&:hover {
+				font-style: italic;
+			}
+		}
 	}
 	.heading {
 		color: var(--black);
