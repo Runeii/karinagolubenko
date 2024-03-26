@@ -1,8 +1,16 @@
 {
   "order": "1",
+  "isPrivate": false,
   "title": "The Green Duology",
   "description": "Envisioning the terraformed world after climate collapse",
-  "featuredMedia": {
-    "image": "/research/Portfolio External.png"
-  }
+  "blocks": [
+    {
+      "visuals": [
+        {
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
+    }
+  ]
 }
