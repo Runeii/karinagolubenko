@@ -141,6 +141,24 @@
           "marginLeft": 0
         }
       ]
+    },
+    {
+      "visuals": [
+        {
+          "media": {
+            "image": "/media/research/Green Duology/230703_CM_Shower_Mockup_01 3.jpg"
+          },
+          "width": 100,
+          "marginLeft": 0
+        },
+        {
+          "media": {
+            "image": "/media/research/Green Duology/Rejuvenating Shower 27 4.jpg"
+          },
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
     }
   ]
 }
