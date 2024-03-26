@@ -71,6 +71,30 @@
           "marginLeft": 0
         }
       ]
+    },
+    {
+      "text": {
+        "heading": "Process",
+        "text": "We kicked off the project by delving into HMW questions and pinpointing opportunity areas within the retail experience. Through research and ideation, we crafted a concept that was further validated with the development of a high-fidelity prototype. Leveraging feedback from stakeholders and targeted user interviews, we iteratively refined the design before implementing a pilot in a selected store."
+      },
+      "visuals": [
+        {
+          "media": {
+            "image": "/media/SFR/RND01958 1.png"
+          },
+          "caption": "01 Technical Prototype",
+          "width": 100,
+          "marginLeft": 0
+        },
+        {
+          "media": {
+            "image": "/media/SFR/2L8A9866edited_LowRes 1.png"
+          },
+          "caption": "02 Prototype Store",
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
     }
   ]
 }
