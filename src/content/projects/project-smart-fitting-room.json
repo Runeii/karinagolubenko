@@ -1,8 +1,19 @@
 {
   "order": 3,
-  "isPrivate": false,
+  "isPrivate": true,
   "title": "Smart Fitting Room",
   "description": "Pilot launch of interactive fitting experience ",
+  "featuredMedia": {
+    "image": "/media/SFR/Board 1.jpeg"
+  },
+  "year": "2022–2023",
+  "tags": [
+    "UI/UX Design",
+    "Concept Development",
+    "User Reserach",
+    "CX Design"
+  ],
+  "credits": "As part of Random Studio (client NDA)",
   "blocks": [
     {
       "visuals": [
