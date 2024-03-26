@@ -4,7 +4,6 @@ import { BUNNY_LIBRARY_ID, BUNNY_API_KEY } from '$env/static/private';
 
 
 export const GET: RequestHandler = async ({ params }) => {
-
   const data = await fetch(`https://video.bunnycdn.com/library/${BUNNY_LIBRARY_ID}/videos/${params.id}`, {
     headers: {
       accept: 'application/json',
