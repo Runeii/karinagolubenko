@@ -106,6 +106,41 @@
           "marginLeft": 0
         }
       ]
+    },
+    {
+      "text": {
+        "text": "While some territories became lifeless, others now offer a new habitat. The story looks into daily lives of the climate refugees in Siberia, a new human resettlement on the lands of former Russia."
+      },
+      "visuals": [
+        {
+          "media": {
+            "image": "/media/research/Green Duology/MacBook Pro - 1 12.jpg"
+          },
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "text": {
+        "text": "Universal basic air, as well as services and goods become new commons that are distributed equally, with the surplus based on the carbon footprint and reputation of each user. The world comes to post-ownership society, in which money loses its value, while a carbon offset becomes the main source of exchange. "
+      },
+      "visuals": [
+        {
+          "media": {
+            "image": "/media/research/Green Duology/MacBook Pro - 1 13.jpg"
+          },
+          "width": 100,
+          "marginLeft": 0
+        },
+        {
+          "media": {
+            "image": "/media/research/Green Duology/MacBook Pro - 1 16.jpg"
+          },
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
     }
   ]
 }
