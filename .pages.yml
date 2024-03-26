@@ -70,7 +70,6 @@ content:
           name: lede,
           label: Lede,
           type: text,
-          options: { format: html, image: false },
         }
       - name: blocks
         label: Content Blocks
@@ -152,8 +151,7 @@ content:
       - {
           name: lede,
           label: Lede,
-          type: rich-text,
-          options: { format: html, image: false },
+          type: text
         }
       - name: blocks
         label: Content Blocks
