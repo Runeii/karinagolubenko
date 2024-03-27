@@ -8,9 +8,10 @@
 	export let description: string;
 	export let slug: string;
 	export let isPrivate: boolean;
+	export let order: number = 0;
 </script>
 
-<a href={slug} class="link">
+<a href={slug} class="link" style={`order: ${order}`}>
 	<article class={`card ${isPrivate && 'isPrivate'}`}>
 		{#if visual}
 			{#if isPrivate}

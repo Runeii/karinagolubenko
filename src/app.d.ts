@@ -19,6 +19,7 @@ declare global {
     description: string;
     isPrivate: boolean;
     content: string;
+    order: string;
   }
 
   interface Error {

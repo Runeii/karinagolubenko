@@ -12,6 +12,7 @@
 			visual={project.featuredMedia}
 			description={project.description}
 			slug={project.slug}
+			order={project.order}
 		/>
 	{/each}
 </div>
