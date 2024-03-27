@@ -20,7 +20,7 @@
 	.tag {
 		@mixin body4;
 		width: auto;
-		padding: 10px 16px;
+		padding: 10px 16px 9px;
 		line-height: 1;
 		border-radius: 60px;
 		list-style: none;
