@@ -3,7 +3,7 @@
 
 	export let visual: MediaBlock;
 	export let alt: string | undefined = undefined;
-	export let size: number;
+	export let size: number = 100;
 
 	const largeSize = (1440 / 100) * size;
 </script>

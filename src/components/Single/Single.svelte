@@ -30,7 +30,7 @@
 <WideLayout>
 	<h1 class="title">{data.title}</h1>
 	<p class="subtitle">{data.description}</p>
-	<Visual class="featured--casestudy" visual={data.featuredMedia} />
+	<Visual class="featured--casestudy" visual={data.featuredMedia} size={100} />
 	<dl class="meta">
 		<div class="year">
 			<dt>Year</dt>
