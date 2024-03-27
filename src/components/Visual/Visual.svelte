@@ -3,6 +3,9 @@
 
 	export let visual: MediaBlock;
 	export let alt: string | undefined = undefined;
+	export let size: number;
+
+	const largeSize = (1440 / 100) * size;
 </script>
 
 {#if visual?.video?.guid}
@@ -12,14 +15,14 @@
 		class={`image ${$$restProps.class ?? ''}`}
 		src={visual.image}
 		{alt}
-		sizes="(min-width:1440px) 1440px, 100vw"
+		sizes="(min-width:1440px) {largeSize}px, 100vw"
 	/>
 {:else if visual?.imageUrl}
 	<img
 		class={`image ${$$restProps.class ?? ''}`}
 		src={visual.imageUrl}
 		{alt}
-		sizes="(min-width:1440px) 1440px, 100vw"
+		sizes="(min-width:1440px) {largeSize}px, 100vw"
 		style="opacity: 0.1"
 	/>
 {/if}

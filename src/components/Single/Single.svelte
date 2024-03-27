@@ -19,6 +19,12 @@
 			}[];
 		}[];
 	};
+
+	const getSizeofVisual = (visuals: { width: number }[], visual: { width: number }) => {
+		const totalWidth = visuals.reduce((acc, curr) => acc + curr.width, 0);
+		const percentage = (visual.width / totalWidth) * 100;
+		return percentage;
+	};
 </script>
 
 <WideLayout>
@@ -54,12 +60,18 @@
 			{/if}
 			{#if block.visuals.filter((visual) => visual.media).length > 0}
 				<div class={`visuals ${block.visuals.length > 3 && 'hasMany'}`}>
-					{#each block.visuals as visual}
+					{#each block.visuals.filter((visual) => visual.media) as visual}
 						<div
 							class="single-visual"
 							style={`--visual-width: ${visual.width}; --margin-left: ${visual.marginLeft}`}
 						>
-							<Visual visual={visual.media} />
+							<Visual
+								size={getSizeofVisual(
+									block.visuals.filter((visual) => visual.media),
+									visual
+								)}
+								visual={visual.media}
+							/>
 							{#if visual.caption}
 								<p>{visual.caption}</p>
 							{/if}
