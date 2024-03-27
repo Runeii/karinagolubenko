@@ -4,12 +4,15 @@
 	import NarrowLayout from '../components/NarrowLayout/NarrowLayout.svelte';
 
 	export let data: PageData;
+	const trimmedIntro = data.content.intro.trim();
 </script>
 
 <NarrowLayout>
-	<p class="intro">
-		{data.content.intro}
-	</p>
+	{#if trimmedIntro}
+		<p class="intro">
+			{trimmedIntro}
+		</p>
+	{/if}
 	<Cards projects={data.projects} />
 </NarrowLayout>
 

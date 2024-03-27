@@ -23,7 +23,6 @@
 		src={visual.imageUrl}
 		{alt}
 		sizes="(min-width:1440px) {largeSize}px, 100vw"
-		style="opacity: 0.1"
 	/>
 {/if}
 
