@@ -9,6 +9,7 @@
 
 	let hasStartedPlaying = false;
 	let videoEl: HTMLVideoElement;
+	let imageEl: HTMLImageElement;
 
 	const getFallbackMp4Urls = (video: BunnyVideo) => {
 		const resolutions = video.availableResolutions.split(',');
@@ -59,15 +60,16 @@
 		videoEl.src = fallbacks.reverse()[0];
 	});
 
-	const getVideoStyleVariables = (video: BunnyVideo | undefined) => {
+	const getVideoStyleVariables = (video: BunnyVideo | undefined, image: HTMLImageElement) => {
 		if (!video) {
 			return '';
 		}
 
-		const aspectRatio = video.width / video.height;
-
 		const variables = {
-			'--aspect-ratio': aspectRatio
+			'--aspect-ratio':
+				image?.naturalWidth && image.naturalWidth > 0
+					? `${image.naturalWidth} / ${image.naturalHeight}`
+					: `${video.width} / ${video.height}`
 		};
 
 		return JSON.stringify(variables).replace(/["{}]/g, '').replace(/,/g, ';');
@@ -92,7 +94,7 @@
 
 <article
 	class={`video ${hasStartedPlaying && 'hasStartedPlaying'} ${$$restProps.class}`}
-	style={getVideoStyleVariables(video)}
+	style={getVideoStyleVariables(video, imageEl)}
 >
 	{#if video}
 		{#if video.availableResolutions}
@@ -112,6 +114,7 @@
 				<img
 					alt="test"
 					src={`https://${PUBLIC_BUNNY_CDN_HOSTNAME}/${video.guid}/${video.thumbnailFileName}`}
+					bind:this={imageEl}
 				/>
 			</button>
 		{/if}
