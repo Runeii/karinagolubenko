@@ -13,5 +13,5 @@ export const load: PageServerLoad = async (context) => {
       message: 'Not found',
     });
   }
-  return processSinglePage(data, context);
+  return processSinglePage(data, `/${params.slug}`, context);
 }

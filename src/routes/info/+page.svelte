@@ -27,5 +27,10 @@
 			margin: 0;
 			padding: 0;
 		}
+
+		:global(a) {
+			color: var(--dark-grey);
+			text-decoration: none;
+		}
 	}
 </style>

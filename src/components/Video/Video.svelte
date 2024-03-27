@@ -43,13 +43,19 @@
 			var hls = new Hls();
 			hls.loadSource(src);
 			hls.attachMedia(videoEl);
+
+			hls.on(Hls.Events.MANIFEST_PARSED, (event, data) => {
+				hls.currentLevel = hls.levels.length - 1;
+			});
+
 			return;
 		}
+
 		const fallbacks = getFallbackMp4Urls(video);
 		if (!fallbacks) {
 			return;
 		}
-		console.log('fallback');
+
 		videoEl.src = fallbacks.reverse()[0];
 	});
 

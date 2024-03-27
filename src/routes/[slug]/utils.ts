@@ -3,12 +3,12 @@ import type { PageServerLoad, RouteParams } from '../$types';
 import { PASSWORD } from '$env/static/private'
 import { hashString, parseMediaBlock } from '../../utils';
 
-export const processSinglePage = async (data, { cookies, fetch, params }: ServerLoadEvent) => {
+export const processSinglePage = async (data, slug, { cookies, fetch }: ServerLoadEvent) => {
   const token = cookies.get('authentication-hash') ?? '';
   const isAuthenticated = token === hashString(PASSWORD);
 
   if (data.isPrivate && !isAuthenticated) {
-    redirect(302, `/authenticate?slug=${params.slug}`);
+    redirect(302, `/authenticate?slug=${slug}`);
     return;
   }
 
