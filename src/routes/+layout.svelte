@@ -27,10 +27,12 @@
 		color: var(--black);
 		position: sticky;
 		top: 0;
+		z-index: 2;
 
 		@media (min-width: 720px) {
 			@mixin body2;
 			padding: 24px 40px;
+			margin: 0 0 100px;
 		}
 
 		.title {

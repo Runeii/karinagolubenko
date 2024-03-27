@@ -20,8 +20,9 @@
 	.tag {
 		@mixin body4;
 		width: auto;
-		padding: 10px;
-		border-radius: 24px;
+		padding: 10px 16px;
+		line-height: 1;
+		border-radius: 60px;
 		list-style: none;
 		display: block;
 		background-color: var(--light-grey);

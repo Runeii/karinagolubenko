@@ -75,22 +75,25 @@
 	.title {
 		@mixin heading3;
 		color: var(--black);
-		margin: 0;
+		margin: 0 auto;
 		padding: 0;
 		width: 100%;
 		@media (min-width: 720px) {
 			@mixin heading1;
+			width: 82%;
 		}
 	}
 	.subtitle {
 		@mixin body3;
 		color: var(--dark-grey);
-		margin: 0 0 16px;
+		margin: 0 auto 16px;
 		padding: 0;
+		width: 100%;
 
 		@media (min-width: 720px) {
 			@mixin body1;
 			margin-bottom: 52px;
+			width: 82%;
 		}
 	}
 

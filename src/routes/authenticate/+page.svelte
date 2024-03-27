@@ -2,13 +2,21 @@
 	import type { ActionData } from '$types';
 	import { page } from '$app/stores';
 	import { onMount } from 'svelte';
-
+	import cross from './cross.svg';
 	export let form: ActionData;
 
 	let slug = form?.slug ?? $page.url.searchParams.get('slug') ?? '/';
+
+	const handleClose = () => {
+		history.back();
+		return false;
+	};
 </script>
 
 <div class="background">
+	<a class="cross" href={`/${slug}`} on:click={handleClose}>
+		<img alt="cross" src={cross} />
+	</a>
 	<form class="box" action="?/authenticate" method="POST">
 		<h1>Password protected page</h1>
 		<p class="description">Please enter your password to get access.</p>
@@ -33,6 +41,27 @@
 		display: flex;
 		place-content: center;
 		place-items: center;
+		z-index: 3;
+	}
+	.cross {
+		position: fixed;
+		top: 28px;
+		right: 16px;
+		height: 38px;
+		width: 38px;
+
+		@media (min-width: 540px) {
+			top: 32px;
+			right: 40px;
+			height: 60px;
+			width: 60px;
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
 	}
 	.box {
 		display: flex;
