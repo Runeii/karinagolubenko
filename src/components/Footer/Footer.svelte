@@ -26,7 +26,7 @@
 		margin: 52px 16px 16px;
 
 		@media (min-width: 720px) {
-			@mixin body2;
+			@mixin body3;
 			flex-direction: row;
 			margin: 120px 40px 60px;
 		}
