@@ -14,7 +14,7 @@
 </script>
 
 <div class="background">
-	<a class="cross" href={`/${slug}`} on:click={handleClose}>
+	<a class="cross" href="/" on:click={handleClose}>
 		<img alt="cross" src={cross} />
 	</a>
 	<form class="box" action="?/authenticate" method="POST">
