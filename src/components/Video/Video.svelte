@@ -101,6 +101,7 @@
 			<video
 				autoplay
 				controls={false}
+				playsinline
 				muted
 				loop
 				class="video"
