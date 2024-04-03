@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
 	import Visual from '../../Visual/Visual.svelte';
 	import PrivateImage from '../../PrivateImage/PrivateImage.svelte';
+	import { onNavigate } from '$app/navigation';
 
 	export let title: string;
 	export let visual: MediaBlock;
@@ -9,9 +9,32 @@
 	export let slug: string;
 	export let isPrivate: boolean;
 	export let order: number = 0;
+
+	let isClicked = false;
+	const handleClick = () => {
+		isClicked = true;
+	};
+
+	onNavigate((navigation) => {
+		if (!document.startViewTransition || !isClicked) {
+			return;
+		}
+
+		return new Promise((resolve) => {
+			document.startViewTransition(async () => {
+				resolve();
+				await navigation.complete;
+			});
+		});
+	});
 </script>
 
-<a href={slug} class="link" style={`order: ${order}`}>
+<a
+	href={slug}
+	class={`link ${isClicked && 'isClicked'}`}
+	on:click={handleClick}
+	style={`order: ${order}`}
+>
 	<article class={`card ${isPrivate && 'isPrivate'}`}>
 		{#if visual}
 			{#if isPrivate}
@@ -26,22 +49,33 @@
 </a>
 
 <style lang="postcss">
-	@keyframes expand-out {
-		to {
-			--start-width: 928;
-			--end-width: 1440;
-			scale: calc(var(--end-width) / var(--start-width));
+	@keyframes fade-in {
+		from {
+			opacity: 0;
 		}
 	}
 
-	:root::view-transition-old(card-expand) {
-		animation: 210ms cubic-bezier(0, 0, 0.2, 1) 90ms both expand-out;
-		transform-origin: top center;
+	@keyframes fade-out {
+		to {
+			opacity: 0;
+		}
 	}
 
+	:root::view-transition-old(root) {
+		animation: 90ms cubic-bezier(0.4, 0, 1, 1) both fade-out;
+	}
+
+	:root::view-transition-new(root) {
+		animation: 500ms ease-out 500ms both fade-in;
+	}
 	.link {
 		text-decoration: none;
+		transform-origin: top center;
 		color: inherit;
+
+		&.isClicked {
+			view-transition-name: card-expand;
+		}
 
 		:global(.image) {
 			margin-bottom: 16px;

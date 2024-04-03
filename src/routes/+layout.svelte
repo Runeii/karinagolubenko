@@ -28,6 +28,7 @@
 		position: sticky;
 		top: 0;
 		z-index: 2;
+		view-transition-name: header;
 
 		@media (min-width: 720px) {
 			@mixin body2;

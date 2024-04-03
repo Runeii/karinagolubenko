@@ -113,6 +113,7 @@
 		width: 100%;
 		height: auto;
 		margin-bottom: 16px;
+		view-transition-name: card-expand;
 
 		@media (min-width: 720px) {
 			margin-bottom: 44px;
