@@ -11,7 +11,8 @@
     "Exhibition Design",
     "User Journey",
     "Graphic Design",
-    "Motion"
+    "Motion",
+    "Art Direction"
   ],
   "credits": "As part of Random Studio for Air Company",
   "lede": "On the occasion of Climate Week, Random Studio translated the ethos of AIR COMPANY into a spatial journey  introducing the company over the course of one night.",
@@ -23,6 +24,9 @@
       },
       "visuals": [
         {
+          "media": {
+            "image": "/media/Air Company/Screenshot 2024-01-04 at 14.49 2.png"
+          },
           "width": 100,
           "marginLeft": 0
         }
