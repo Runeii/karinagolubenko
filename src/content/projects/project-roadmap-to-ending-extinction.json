@@ -75,6 +75,27 @@
           "marginLeft": 15
         }
       ]
+    },
+    {
+      "text": {
+        "text": "Upon entering the second space, guests are greeted by a totem installation hosting a variety of information displays that narrate the story of the company's achievements in carbon reduction."
+      },
+      "visuals": [
+        {
+          "media": {
+            "image": "/media/Air Company/230921_AIR COMPANY Innovation Summit 2023_David Cabrera-9.jpg"
+          },
+          "width": 100,
+          "marginLeft": 0
+        },
+        {
+          "media": {
+            "video": "657a03c5-e5a9-46b9-935e-1438b4633668"
+          },
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
     }
   ]
 }
