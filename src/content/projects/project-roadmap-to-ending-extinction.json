@@ -53,6 +53,18 @@
           "marginLeft": 15
         }
       ]
+    },
+    {
+      "text": {
+        "heading": "End Result",
+        "text": "A metal wall both divides the main space and acts as a canvas to host information that elaborate on AIR COMPANY’s technology. Plexiglass boards were selected to elegantly structure complex information, with the added benefit of potential reuse in the future."
+      },
+      "visuals": [
+        {
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
     }
   ]
 }
