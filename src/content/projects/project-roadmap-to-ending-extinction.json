@@ -39,8 +39,18 @@
       },
       "visuals": [
         {
+          "media": {
+            "image": "/media/Air Company/230921_AIR COMPANY Innovation Summit 2023_David Cabrera-12.jpg"
+          },
           "width": 100,
           "marginLeft": 0
+        },
+        {
+          "media": {
+            "video": "5dca9d5b-6e8d-4603-9cd2-72b1ae0528c9"
+          },
+          "width": 100,
+          "marginLeft": 15
         }
       ]
     }
