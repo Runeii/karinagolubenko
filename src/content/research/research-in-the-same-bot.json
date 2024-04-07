@@ -1,0 +1,16 @@
+{
+  "order": 2,
+  "isPrivate": false,
+  "title": "In the Same Bot ",
+  "description": "An interactive game as part of 17th Venice Biennale",
+  "blocks": [
+    {
+      "visuals": [
+        {
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
+    }
+  ]
+}
