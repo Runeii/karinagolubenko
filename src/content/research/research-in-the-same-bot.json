@@ -72,6 +72,9 @@
       },
       "visuals": [
         {
+          "media": {
+            "video": "d3820c4b-85ba-4c73-9b90-df821429d4a7"
+          },
           "width": 100,
           "marginLeft": 0
         }
