@@ -1,0 +1,26 @@
+{
+  "order": 5,
+  "isPrivate": true,
+  "title": "Well-Being Moments",
+  "description": "Unlocking the potential of phygital experiences",
+  "featuredMedia": {
+    "image": "/media/CitizenM/-1x-1 copy.jpg"
+  },
+  "year": "2023",
+  "tags": [
+    "Concept Discovery",
+    "Rapid Prototyping",
+    "Research",
+    "CX/UX"
+  ],
+  "blocks": [
+    {
+      "visuals": [
+        {
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
+    }
+  ]
+}
