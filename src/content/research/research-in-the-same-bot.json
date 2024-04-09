@@ -29,6 +29,27 @@
           "marginLeft": 0
         }
       ]
+    },
+    {
+      "text": {
+        "text": "On the 25th of May 2018, the VR installation Free the Space at the Venice Biennale of Architecture 2018 launched the activity of the Virtual Russian Pavilion — a free, independent and open platform for regular exhibitions in the mediums of virtual and augmented reality. "
+      },
+      "visuals": [
+        {
+          "media": {
+            "image": "/media/research/In the Same Bot/VRP_freethespace_exhibition_1.JPG"
+          },
+          "width": 100,
+          "marginLeft": 0
+        },
+        {
+          "media": {
+            "image": "/media/research/In the Same Bot/MacBook Pro - 1 10.png"
+          },
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
     }
   ]
 }
