@@ -45,6 +45,21 @@
           "marginLeft": 0
         }
       ]
+    },
+    {
+      "text": {
+        "heading": "End Result",
+        "text": "The result is a  personalised collection of well-being moments catered towards alleviating travel fatigue. These moments are complimentary with a citizenM room and can be accessed through the app. Each moment is has its own distinctive scenography, which is brought to life within the physical space of the room."
+      },
+      "visuals": [
+        {
+          "media": {
+            "video": "d746bce4-9407-41b3-a6ea-c6f26a4885ce"
+          },
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
     }
   ]
 }
