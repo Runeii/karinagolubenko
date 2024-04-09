@@ -60,6 +60,46 @@
           "marginLeft": 0
         }
       ]
+    },
+    {
+      "text": {
+        "heading": "Process",
+        "text": "Rather than seeking alignment on fully developed concepts we ideated quickly, tested ideas, validated the concepts with hotel's guests, and delivered rapid prototypes to determine the potential of an idea. The final insights and concept demos were shared with the client as part of the creative board meetings."
+      },
+      "visuals": [
+        {
+          "media": {
+            "image": "/media/CitizenM/IMG_0688 1.png"
+          },
+          "caption": "01 Field research and Ideating ",
+          "width": 100,
+          "marginLeft": 0
+        },
+        {
+          "media": {
+            "image": "/media/CitizenM/230703_CM_Shower_Mockup_01 1.png"
+          },
+          "caption": "02 Rapid prototyping and testing",
+          "width": 100,
+          "marginLeft": 0
+        },
+        {
+          "media": {
+            "image": "/media/CitizenM/Rejuvenating Shower 27 1.png"
+          },
+          "caption": "03 High-fidelity storyboards",
+          "width": 100,
+          "marginLeft": 0
+        },
+        {
+          "media": {
+            "image": "/media/CitizenM/Rejuvenating Shower 27 2.png"
+          },
+          "caption": "04 Desirability Validation",
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
     }
   ]
 }
