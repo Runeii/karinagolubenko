@@ -79,6 +79,17 @@
           "marginLeft": 0
         }
       ]
+    },
+    {
+      "text": {
+        "text": "The user can choose three missions to play: a participating artist, the commissioner, or an intern working at the Pavilion. From these three unique perspectives the user takes on mini quests that, step-by-step, bring the exhibition closer to reality. Every choice you make  and the way you respond to everyday issues can change the final outcome of the project beyond recognition."
+      },
+      "visuals": [
+        {
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
     }
   ]
 }
