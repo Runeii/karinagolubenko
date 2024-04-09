@@ -17,8 +17,30 @@
   "lede": "As part of an R&D program for a hospitality client, I explored the potential of digital-physical services to unlock new well-being experiences through ideation, investigation, and validation.",
   "blocks": [
     {
+      "text": {
+        "heading": "Insight",
+        "text": "A memorable hotel stay typically promises luxury, but how can we elevate it to offer a real wellness experience with the brand's light-hearted and humorous attitude towards standard hospitality 'promises'? "
+      },
       "visuals": [
         {
+          "media": {
+            "image": "/media/CitizenM/100523_CitizenM_Mockups_Shower_Curtain_02 1.jpeg"
+          },
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "text": {
+        "heading": "Idea",
+        "text": "When our team at Random Studio took on the challenge of redefining hotel experience for citizenM, we aimed to enhance their room's inherent strengths to provide value beyond existing apps and travel gadgets. "
+      },
+      "visuals": [
+        {
+          "media": {
+            "video": "2db5ed3e-b455-4719-9c5b-faaf29b0fd6c"
+          },
           "width": 100,
           "marginLeft": 0
         }
