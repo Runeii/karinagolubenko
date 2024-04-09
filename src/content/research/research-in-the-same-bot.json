@@ -100,6 +100,18 @@
           "marginLeft": 0
         }
       ]
+    },
+    {
+      "text": {
+        "heading": "In collaboration with",
+        "text": "🦁🦄  is an independent group that was founded in 2018 by Anton Kalgaev, Ivan Kuryachiy, Karina Golubenko, Liza Dorrer, Maria Kachalova, Maria Kosareva and Pekka Airaxin."
+      },
+      "visuals": [
+        {
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
     }
   ]
 }
