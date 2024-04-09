@@ -50,6 +50,32 @@
           "marginLeft": 0
         }
       ]
+    },
+    {
+      "text": {
+        "text": "In 2020, on occasion of the 17th edition of the Biennale, our group was invited to contribute to the official Russian Pavilion, which took a digital format due to the challenges posed by the COVID-19 pandemic. "
+      },
+      "visuals": [
+        {
+          "media": {
+            "image": "/media/research/In the Same Bot/open+_+FLAUNT.png"
+          },
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "text": {
+        "heading": "Concept",
+        "text": "The chatbot exposes a complex internal mechanism of big cultural events like the Biennale, and reveals their limitations and possibilities, urging for a more meaningful and open model of organising such institutions. "
+      },
+      "visuals": [
+        {
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
     }
   ]
 }
