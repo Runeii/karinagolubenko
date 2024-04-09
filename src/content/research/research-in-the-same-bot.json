@@ -86,6 +86,16 @@
       },
       "visuals": [
         {
+          "media": {
+            "video": "b2570562-a461-4da0-be5a-c209ff1b2ea8"
+          },
+          "width": 40,
+          "marginLeft": 0
+        },
+        {
+          "media": {
+            "image": "/media/research/In the Same Bot/Screenshot 2020-05-12 at 18.26.38.png"
+          },
           "width": 100,
           "marginLeft": 0
         }
