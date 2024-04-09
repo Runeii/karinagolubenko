@@ -24,7 +24,14 @@
       "visuals": [
         {
           "media": {
-            "image": "/media/CitizenM/100523_CitizenM_Mockups_Shower_Curtain_02 1.jpeg"
+            "image": "/media/CitizenM/100523_CitizenM_Mockups_Shower_Curtain_02 1.png"
+          },
+          "width": 100,
+          "marginLeft": 0
+        },
+        {
+          "media": {
+            "image": "/media/CitizenM/shower.png"
           },
           "width": 100,
           "marginLeft": 0
