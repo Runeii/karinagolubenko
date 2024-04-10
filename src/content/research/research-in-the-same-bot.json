@@ -59,10 +59,10 @@
       "visuals": [
         {
           "media": {
-            "image": "/media/research/In the Same Bot/Frame 483.png"
+            "image": "/media/research/In the Same Bot/diagram-bot.png"
           },
-          "width": 100,
-          "marginLeft": 0
+          "width": 80,
+          "marginLeft": 20
         }
       ]
     },
@@ -91,7 +91,7 @@
             "video": "b2570562-a461-4da0-be5a-c209ff1b2ea8"
           },
           "width": 30,
-          "marginLeft": 50
+          "marginLeft": 70
         }
       ]
     },
