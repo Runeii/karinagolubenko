@@ -14,6 +14,7 @@
 		flex-direction: row;
 		gap: 8px;
 		margin: 0;
+		align-items: flex-start;
 		padding: 0;
 		flex-wrap: wrap;
 	}
