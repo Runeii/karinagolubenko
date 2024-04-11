@@ -26,7 +26,7 @@
 			return;
 		}
 
-		if (!video) {
+		if (!video && id) {
 			video = await getVideoDataById(id);
 		}
 
