@@ -36,15 +36,10 @@
 			console.log('no videoEl or src');
 			return;
 		}
-		if (videoEl.canPlayType('application/vnd.apple.mpegurl')) {
-			videoEl.src = src;
-			return;
-		}
 		if (Hls.isSupported()) {
 			var hls = new Hls();
 			hls.loadSource(src);
 			hls.attachMedia(videoEl);
-
 			hls.on(Hls.Events.MANIFEST_PARSED, (event, data) => {
 				hls.currentLevel = hls.levels.length - 1;
 			});
