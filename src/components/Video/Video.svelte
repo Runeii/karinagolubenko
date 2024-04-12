@@ -55,20 +55,19 @@
 		videoEl.src = fallbacks.reverse()[0];
 	});
 
-	const getVideoStyleVariables = (video: BunnyVideo | undefined, image: HTMLImageElement) => {
+	let aspectRatio = video ? `${video.width} / ${video.height}` : undefined;
+
+	onMount(() => {
 		if (!video) {
-			return '';
+			return;
 		}
 
-		const variables = {
-			'--aspect-ratio':
-				image?.naturalWidth && image.naturalWidth > 0
-					? `${image.naturalWidth} / ${image.naturalHeight}`
-					: `${video.width} / ${video.height}`
+		const image = new Image();
+		image.src = `https://${PUBLIC_BUNNY_CDN_HOSTNAME}/${video.guid}/${video.thumbnailFileName}`;
+		image.onload = () => {
+			aspectRatio = `${image.naturalWidth} / ${image.naturalHeight}`;
 		};
-
-		return JSON.stringify(variables).replace(/["{}]/g, '').replace(/,/g, ';');
-	};
+	});
 
 	const handlePlay = () => {
 		hasStartedPlaying = true;
@@ -89,7 +88,7 @@
 
 <article
 	class={`video ${hasStartedPlaying && 'hasStartedPlaying'} ${$$restProps.class}`}
-	style={getVideoStyleVariables(video, imageEl)}
+	style={`--aspect-ratio: ${aspectRatio};`}
 >
 	{#if video}
 		{#if video.availableResolutions}
