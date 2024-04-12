@@ -62,7 +62,7 @@
             "image": "/media/research/In the Same Bot/diagram-bot.png"
           },
           "width": 80,
-          "marginLeft": 0
+          "marginLeft": 50
         }
       ]
     },
@@ -91,7 +91,7 @@
             "video": "b2570562-a461-4da0-be5a-c209ff1b2ea8"
           },
           "width": 30,
-          "marginLeft": 0
+          "marginLeft": 50
         }
       ]
     },
