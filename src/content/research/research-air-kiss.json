@@ -73,6 +73,45 @@
           "marginLeft": 0
         }
       ]
+    },
+    {
+      "text": {
+        "text": "AI interfaces with bodies from emulsions, walls, the air, and one’s inner voice. Data is stored in water—it flows through bodies and the city. The city knows your past, and that of your ancestors; that is the data it was trained on. It sees patterns more vast and more detailed than anything discernible from any one point of view. It emulates the human, but in doing so, walks you through its dark, inverse uncanny valleys."
+      },
+      "visuals": [
+        {
+          "media": {
+            "image": "/media/research/Air Kiss/2.jpg"
+          },
+          "width": 100,
+          "marginLeft": 0
+        },
+        {
+          "media": {
+            "image": "/media/research/Air Kiss/6.jpg"
+          },
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "visuals": [
+        {
+          "media": {
+            "image": "/media/research/Air Kiss/3.jpg"
+          },
+          "width": 100,
+          "marginLeft": 0
+        },
+        {
+          "media": {
+            "image": "/media/research/Air Kiss/4.jpg"
+          },
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
     }
   ]
 }
