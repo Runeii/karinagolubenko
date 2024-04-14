@@ -112,6 +112,57 @@
           "marginLeft": 0
         }
       ]
+    },
+    {
+      "text": {
+        "text": "AI trained by a human archive predicts the nature of the next experience, tailored for the experiencer. The result is a perception design project folding in on itself in a continuous feedback loop. "
+      },
+      "visuals": [
+        {
+          "media": {
+            "image": "/media/research/Air Kiss/MacBook Pro - 1 10.jpg"
+          },
+          "width": 100,
+          "marginLeft": 0
+        },
+        {
+          "media": {
+            "image": "/media/research/Air Kiss/MacBook Pro - 1 8.jpg"
+          },
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "visuals": [
+        {
+          "media": {
+            "image": "/media/research/Air Kiss/MacBook Pro - 1 7.jpg"
+          },
+          "width": 100,
+          "marginLeft": 0
+        },
+        {
+          "media": {
+            "image": "/media/research/Air Kiss/MacBook Pro - 1 9.jpg"
+          },
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "text": {
+        "heading": "In collaboration with",
+        "text": "A collaborative final project  by Pekka Airaxin, Egor Kraft,  Alina Kvirkvelia and Karina Golubenko that was developed within the New Normal postgraduate programme at Strelka Institute of Media, Architecture and Design."
+      },
+      "visuals": [
+        {
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
     }
   ]
 }
