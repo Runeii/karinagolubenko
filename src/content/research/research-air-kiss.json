@@ -1,0 +1,78 @@
+{
+  "order": 3,
+  "isPrivate": false,
+  "title": "Air Kiss",
+  "description": "A film on the end point of governance-through-AI",
+  "featuredMedia": {
+    "video": "bf1f0fdf-9ae4-4408-b360-514768c02d12"
+  },
+  "year": "2017–2018",
+  "tags": [
+    "Co-direction",
+    "Research",
+    "Production"
+  ],
+  "credits": "As part of The New Normal Program at Strelka",
+  "lede": "Air Kiss is a speculative film that looks at artificial intelligence as a ubiquitous material and urban condition. ",
+  "blocks": [
+    {
+      "text": {
+        "heading": "Background",
+        "text": "What becomes of an urban habitat when technologies like artificial intelligence, nanoengineering, synthetic sensing, and brain-computer interfaces are integrated into the city? This adaptation could eventually constitute a condition best described as urban scale chemistry. AI is a human-machine symbiosis, an emergent phenomenon that governs itself."
+      },
+      "visuals": [
+        {
+          "media": {
+            "video": "7bfaab23-613b-4ffa-9c99-bd1440874d31"
+          },
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "text": {
+        "heading": "About the film",
+        "text": "Air Kiss is an urban design speculation and poem about the experience of losing the borders\nof one’s body and mind to the city. The city outside is as (or more) sentient, complex, and irrational as the human self. The city is an urban scale personal mirror, a distributed alien self. Prediction, a core capability of neural networks, comes to fruition when synthetic systems collaborate for urban operations. Time becomes fuzzy when a cloud of predictions rises from the actions of millions of inhabitants in an address space of trillions of points."
+      },
+      "visuals": [
+        {
+          "media": {
+            "image": "/media/research/Air Kiss/AirKiss_Still_16.jpg"
+          },
+          "width": 100,
+          "marginLeft": 0
+        },
+        {
+          "media": {
+            "image": "/media/research/Air Kiss/AirKiss_Still_19.jpg"
+          },
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "visuals": [
+        {
+          "media": {
+            "image": "/media/research/Air Kiss/AirKiss_Still_9.jpg"
+          },
+          "width": 100,
+          "marginLeft": 0
+        },
+        {
+          "width": 100,
+          "marginLeft": 0
+        },
+        {
+          "media": {
+            "image": "/media/research/Air Kiss/44.jpg"
+          },
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
+    }
+  ]
+}
