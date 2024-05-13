@@ -1,0 +1,75 @@
+{
+  "order": 7,
+  "isPrivate": true,
+  "title": "about : blank",
+  "description": "R&D Concept for an automated live stream setup",
+  "featuredMedia": {
+    "image": "/media/Doyin/heroimage-doyin.png"
+  },
+  "year": "2023",
+  "tags": [
+    "Concept Design",
+    "R&D",
+    "Prototyping",
+    "User Experience"
+  ],
+  "credits": "As part of Random Studio for Zara",
+  "lede": "Leveraging Douyin platform for high-impact fashion marketing, blending entertainment, interactivity, and e-commerce in a captivating way.",
+  "blocks": [
+    {
+      "text": {
+        "heading": "Insight",
+        "text": "Zara is poised to revolutionize the fashion industry once again, this time through pioneering experimentation in the realm of livestream e-commerce.  Recognizing the potential of this new frontier, our team was tasked to create a dynamic scenography tailored for Doyin platform."
+      },
+      "visuals": [
+        {
+          "media": {
+            "image": "/media/Doyin/zara-diagram.svg"
+          },
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "text": {
+        "heading": "Idea",
+        "text": "We see Zara Douyin as an extension of Zara's existing e-commerce, and as such it should live in the same world, the world of the screen. Whatever space we design should remain fresh, with flexibility and reactiveness being at the core of its concept — a fully programmable space. "
+      },
+      "visuals": [
+        {
+          "media": {
+            "image": "/media/Doyin/zarasvg 1 1.svg"
+          },
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "text": {
+        "text": "In contrast to traditional setups demanding a sizable crew working long hours, seven days a week, we tried to bring randomness of automation to the core of the concept. Employing clothing detection algorithms, dynamic cameras, and responsive scenography, Zara should achieve unprecedented flexibility for seasonal updates and generate captivating real-time content, even for extended daily durations."
+      },
+      "visuals": [
+        {
+          "media": {
+            "image": "/media/Doyin/doyin-algorithm.png"
+          },
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "text": {
+        "text": "Drawing inspiration from about:blank, which is emblematic of the internet's infinite possibilities and serves as a blank canvas, this colon becomes the horizon of our dynamic backdrops, the platform upon which our hosts stand, the visual representation of 'loading' lights, and even mirrors the form of the infinity cove itself, thus unifying and harmonizing the elements into a cohesive whole."
+      },
+      "visuals": [
+        {
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
+    }
+  ]
+}
