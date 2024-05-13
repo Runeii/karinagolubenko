@@ -66,6 +66,26 @@
       },
       "visuals": [
         {
+          "media": {
+            "video": "fef442f3-a117-4ad4-8016-236f05bf0e8b"
+          },
+          "caption": "01 Garment In",
+          "width": 100,
+          "marginLeft": 0
+        },
+        {
+          "media": {
+            "video": "4a162126-8915-4bbc-9c1e-63f31f97858b"
+          },
+          "caption": "02 Product Close-up",
+          "width": 100,
+          "marginLeft": 0
+        },
+        {
+          "media": {
+            "video": "8d152693-7b76-4d54-a4a3-556eea520912"
+          },
+          "caption": "03 XR Stage",
           "width": 100,
           "marginLeft": 0
         }
