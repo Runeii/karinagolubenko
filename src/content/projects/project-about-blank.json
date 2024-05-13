@@ -98,6 +98,50 @@
           "marginLeft": 0
         }
       ]
+    },
+    {
+      "text": {
+        "heading": "End Result",
+        "text": "By ideating and prototyping we established the framework for the space to be transformed through lighting changes and generated backgrounds based on the garments that the hosts are wearing. The initial pilot is centred on exploring diverse coloured environments, serving as a testing ground for future experiments."
+      },
+      "visuals": [
+        {
+          "media": {
+            "image": "/media/Doyin/doying-space.png"
+          },
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "text": {
+        "text": "We have developed a very early prototype of the garment detection system, in which computer vision ‘sees’ the different garments worn by any individual on set, and automatically generates different scenography based upon this data. This can be further extended into a smarter system that sees not only colours but other attributes of the clothing."
+      },
+      "visuals": [
+        {
+          "media": {
+            "video": "e3877692-3f85-420e-a14c-3381a2817e1d"
+          },
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "text": {
+        "heading": "Process",
+        "text": "We created an exact digital copy of the livestream within Unreal, a real-time game engine which gives us the ability to rapidly prototype and assess the feasibility of different shots and lighting set ups."
+      },
+      "visuals": [
+        {
+          "media": {
+            "video": "3aadc4e0-ab18-4aaa-8857-1c932d49d1b5"
+          },
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
     }
   ]
 }
