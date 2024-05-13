@@ -88,6 +88,14 @@
           "caption": "03 XR Stage",
           "width": 100,
           "marginLeft": 0
+        },
+        {
+          "media": {
+            "video": "bb0ee388-f2c9-47fe-bda0-4e1ed888d9a2"
+          },
+          "caption": "04 Host Transition",
+          "width": 100,
+          "marginLeft": 0
         }
       ]
     }
