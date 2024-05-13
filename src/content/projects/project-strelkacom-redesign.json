@@ -1,0 +1,107 @@
+{
+  "order": 6,
+  "isPrivate": false,
+  "title": "Strelka.com Redesign",
+  "description": "Redefining digital identity for evolving platform",
+  "featuredMedia": {
+    "video": "0bbae3c8-dc46-4ee6-9ab5-648ed1f6ad87"
+  },
+  "year": "2019–2021",
+  "tags": [
+    "UI/UX Design Lead",
+    "Concept",
+    "Digital Art Direction"
+  ],
+  "credits": "As part of Strelka Institute",
+  "lede": "Over my 2,5 years at Strelka, I led the entire redesign of the institute’s digital surfaces. This included the entirety of strelka.com platform, which was visited by 432K visitors a month.",
+  "blocks": [
+    {
+      "text": {
+        "heading": "Insight",
+        "text": "Found in 2009, Strelka Institute for Media, Architecture and Design was one of the foremost institutions in the field of urbanism. It closed down in 2022 as a response to Russian invasion into Ukraine. \nUpon joining Strelka in 2019, I took the lead to redesign the institute's website to address challenges related to its lack of responsiveness and neglect of mobile layouts."
+      },
+      "visuals": [
+        {
+          "media": {
+            "image": "/media/Strelka/before.png"
+          },
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "text": {
+        "text": "The initiative aimed to enhance the user experience across devices, particularly addressing the 54% desktop and 46% mobile user ratio observed at the time. Another reason for the redesign was platform's expansion plans to accommodate multiple branches of the Institute."
+      },
+      "visuals": [
+        {
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "text": {
+        "heading": "Idea",
+        "text": "The vision for the new website was centered around a modular structure, designed to facilitate easy organization and adaptability. One of the standout features of the design proposal was its flexibility to host a variety of programmes and content, while maintaining a cohesive design."
+      },
+      "visuals": [
+        {
+          "media": {
+            "video": "5ac917c1-3f2a-42c9-b35c-2f168f944902"
+          },
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "text": {
+        "text": "The dynamic main page adapts seasonally, reflecting the current primary focus, whether it's Strelka Summer events, program open calls, or updates on released books and podcasts."
+      },
+      "visuals": [
+        {
+          "media": {
+            "video": "The dynamic main page adapts seasonally, reflecting the current primary focus, whether it's Strelka Summer, program open calls, or updates on books and podcasts."
+          },
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "text": {
+        "heading": "End Result",
+        "text": "The platform incorporated free online courses on urbanism and architecture, e-com shop integration for Strelka Press books and personal account for course tracking, event registration, applications, bookmarks and more."
+      },
+      "visuals": [
+        {
+          "media": {
+            "image": "/media/Strelka/strelka3.jpg"
+          },
+          "width": 100,
+          "marginLeft": 0
+        },
+        {
+          "media": {
+            "image": "/media/Strelka/coursesstrelka.jpg"
+          },
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "text": {
+        "text": "The modular design consists of a set of components for events, media, profiles, and books, complemented by smart recommendations.  A tag system seamlessly connects various departments, people, and events, facilitating easy content navigation and boosting user retention. "
+      },
+      "visuals": [
+        {
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
+    }
+  ]
+}
