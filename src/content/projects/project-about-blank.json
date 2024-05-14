@@ -27,7 +27,7 @@
             "image": "/media/Doyin/zara-diagram.svg"
           },
           "width": 50,
-          "marginLeft": 0
+          "marginLeft": 25
         }
       ]
     },
@@ -42,7 +42,7 @@
             "image": "/media/Doyin/zarasvg 1 1.svg"
           },
           "width": 50,
-          "marginLeft": 0
+          "marginLeft": 25
         }
       ]
     },
@@ -56,7 +56,7 @@
             "image": "/media/Doyin/doyin-algorithm.png"
           },
           "width": 80,
-          "marginLeft": 20
+          "marginLeft": 0
         }
       ]
     },
