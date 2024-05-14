@@ -26,8 +26,8 @@
           "media": {
             "image": "/media/Doyin/zara-diagram.svg"
           },
-          "width": 100,
-          "marginLeft": 0
+          "width": 50,
+          "marginLeft": 40
         }
       ]
     },
@@ -41,8 +41,8 @@
           "media": {
             "image": "/media/Doyin/zarasvg 1 1.svg"
           },
-          "width": 100,
-          "marginLeft": 0
+          "width": 50,
+          "marginLeft": 50
         }
       ]
     },
@@ -55,7 +55,7 @@
           "media": {
             "image": "/media/Doyin/doyin-algorithm.png"
           },
-          "width": 100,
+          "width": 80,
           "marginLeft": 0
         }
       ]
