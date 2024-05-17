@@ -58,7 +58,7 @@ content:
           - name: image
             label: Image
             type: image
-            options: { input: static/media, output: /media }
+            options: { input: static/media, output: /media, categories: image }
           - name: video
             label: Video
             type: string
@@ -66,11 +66,7 @@ content:
       - { name: year, label: Year, type: string }
       - { name: tags, label: Tags, type: string, list: true }
       - { name: credits, label: Credits, type: string }
-      - {
-          name: lede,
-          label: Lede,
-          type: text,
-        }
+      - { name: lede, label: Lede, type: text }
       - name: blocks
         label: Content Blocks
         type: object
@@ -98,7 +94,8 @@ content:
                   - name: image
                     label: Image
                     type: image
-                    options: { input: static/media, output: /media }
+                    options:
+                      { input: static/media, output: /media, categories: image }
                   - name: video
                     label: Video
                     type: string
@@ -140,7 +137,7 @@ content:
           - name: image
             label: Image
             type: image
-            options: { input: static/media, output: /media }
+            options: { input: static/media, output: /media, categories: image }
           - name: video
             label: Video
             type: string
@@ -148,11 +145,7 @@ content:
       - { name: year, label: Year, type: string }
       - { name: tags, label: Tags, type: string, list: true }
       - { name: credits, label: Credits, type: string }
-      - {
-          name: lede,
-          label: Lede,
-          type: text
-        }
+      - { name: lede, label: Lede, type: text }
       - name: blocks
         label: Content Blocks
         type: object
@@ -180,7 +173,8 @@ content:
                   - name: image
                     label: Image
                     type: image
-                    options: { input: static/media, output: /media }
+                    options:
+                      { input: static/media, output: /media, categories: image }
                   - name: video
                     label: Video
                     type: string
