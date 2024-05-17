@@ -8,11 +8,3 @@
 <NarrowLayout>
 	<Cards projects={data.research} />
 </NarrowLayout>
-
-<style lang="postcss">
-	.projects {
-		display: flex;
-		flex-direction: column;
-		gap: 32px;
-	}
-</style>
