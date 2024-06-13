@@ -1,0 +1,139 @@
+{
+  "order": 5,
+  "isPrivate": true,
+  "title": "Extended Pop-Up Experience",
+  "description": "Blending digital and physical touchpoints ",
+  "featuredMedia": {
+    "image": "/media/Rimowa/Rimowa_drawers2.png"
+  },
+  "year": "2022",
+  "tags": [
+    "Concept",
+    "User Experience",
+    "UI Design",
+    "Motion"
+  ],
+  "credits": "As part of Random Studio for Rimowa",
+  "lede": "Envisioning new opportunities for omni-channel experiences by turning limited product stock into a unique retail discovery.",
+  "blocks": [
+    {
+      "text": {
+        "heading": "Insight",
+        "text": "When approaching the experience concept for a series of Rimowa pop-up stores, we aimed to design a form language that allows each interior element and digital touchpoint to be combined in various configurations, catering to any spatial needs. "
+      },
+      "visuals": [
+        {
+          "media": {
+            "image": "/media/Rimowa/pasted-image 2.png"
+          },
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "text": {
+        "heading": "Idea",
+        "text": "Viewing space limits and low product stock as opportunities, our team aspired to create a space that seamlessly blends e-commerce with a physical store."
+      },
+      "visuals": [
+        {
+          "media": {
+            "image": "/media/Rimowa/RIMOWA_TOOLBIS.png"
+          },
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "text": {
+        "heading": "End Result",
+        "text": "Inside, we provide interactive tools for discovery and information. Through intuitive interfaces, that are controlled with physical products, digital displays reveal other colourways, sizes and insights."
+      },
+      "visuals": [
+        {
+          "media": {
+            "image": "/media/Rimowa/Rimowa_Facade.png"
+          },
+          "width": 100,
+          "marginLeft": 0
+        },
+        {
+          "media": {
+            "video": "2940f5f8-6fdd-4180-8a8c-10a1520a283e"
+          },
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "text": {
+        "text": "ENGAGE\nAn interactive window display  gives an inviting and unobscured view into the pop up and engages shoppers who walk by in playful yet elegant way."
+      },
+      "visuals": [
+        {
+          "media": {
+            "video": "b24fe307-4242-4c31-90cf-91955445fa68"
+          },
+          "width": 100,
+          "marginLeft": 0
+        },
+        {
+          "media": {
+            "video": "0443c244-3026-4be4-9302-bf2c42d2ae40"
+          },
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "text": {
+        "text": "EXTENDED EXPLORATION\nShoppers can extend their exploration of sizes, colours and styles using Digital Twin objects while still having the physical product present."
+      },
+      "visuals": [
+        {
+          "media": {
+            "video": "c64740fe-3849-4fbd-a830-a84e43205f87"
+          },
+          "width": 100,
+          "marginLeft": 0
+        },
+        {
+          "media": {
+            "video": "e37cbbe0-37a1-4384-960b-b65559317a92"
+          },
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "text": {
+        "text": "Shopper can immediately explore the physical collection (which is most natural behaviour). If the shopper has clear intent for a specific item(s) they immediately continue to the check-out desk."
+      },
+      "visuals": [
+        {
+          "media": {
+            "video": "9bd066ce-7833-41d9-baf7-199f3fc89689"
+          },
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "text": {
+        "text": "FINALISE AND CHECK-OUT\nThe check-out desk is set up as a more private moment where customer can complete their selection and confirm their order."
+      },
+      "visuals": [
+        {
+          "width": 100,
+          "marginLeft": 0
+        }
+      ]
+    }
+  ]
+}
