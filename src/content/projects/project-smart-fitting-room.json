@@ -1,6 +1,6 @@
 {
   "order": 3,
-  "isPrivate": true,
+  "isPrivate": false,
   "title": "Smart Fitting Room",
   "description": "Pilot launch of interactive fitting experience ",
   "featuredMedia": {
@@ -20,7 +20,7 @@
     {
       "text": {
         "heading": "Insight",
-        "text": "Fitting rooms are the bottom funnel of a sale. However, most of them are generic and uninviting spaces, when they could be spaces optimized to make customers feel comfortable and confident in their choice."
+        "text": "Fitting rooms are the bottom funnel of a sale. However, most of them are generic spaces, when they could be environments optimized to make customers feel comfortable and confident in their choices."
       },
       "visuals": [
         {
@@ -56,7 +56,7 @@
     {
       "text": {
         "heading": "Idea",
-        "text": "With integrated technology, Smart Fitting Room can provide a seamless shopping experience to aid clients in the search for their perfect fit, leading to increased conversion and sales for the retailer."
+        "text": "As part of the new product strategy for our long-term retail partner, we proposed the concept of a Smart Fitting Room. Utilizing integrated RFID technology, motion sensors, and LED lighting, this solution aims to provide a seamless shopping experience, assisting customers in finding their perfect fit."
       },
       "visuals": [
         {
