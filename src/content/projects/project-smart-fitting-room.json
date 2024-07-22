@@ -8,14 +8,14 @@
   },
   "year": "2022–2023",
   "tags": [
-    "UI/UX Design",
+    "User Experience",
     "Concept Development",
-    "User Reserach",
-    "CX Design",
+    "User Research",
+    "User Interface",
     "Art Direction"
   ],
   "credits": "As part of Random Studio (client NDA)",
-  "lede": "As a member of the Digital Retail Experience team at Random Studio, I was responsible for designing and launching the Smart Fitting Room pilot in two of our client's stores in Europe.",
+  "lede": "As part of Digital Retail Experience team at Random Studio, we designed and launched the Smart Fitting Room pilot in two of our client's stores in Europe.",
   "blocks": [
     {
       "text": {
@@ -56,7 +56,7 @@
     {
       "text": {
         "heading": "Idea",
-        "text": "As part of the new product strategy for our long-term retail partner, we proposed the concept of a Smart Fitting Room. Utilizing integrated RFID technology, motion sensors, and LED lighting, this solution aims to provide a seamless shopping experience, assisting customers in finding their perfect fit."
+        "text": "Utilizing integrated RFID technology, motion sensors, and LED lighting, our MVP solution aims to provide a seamless shopping experience, assisting customers in finding their perfect fit."
       },
       "visuals": [
         {
@@ -100,7 +100,7 @@
     {
       "text": {
         "heading": "Process",
-        "text": "We kicked off the project by delving into HMW questions and pinpointing opportunity areas within the retail experience. Through research and ideation, we crafted a concept that was further validated with the development of a high-fidelity prototype. Leveraging feedback from stakeholders and targeted user interviews, we iteratively refined the design before implementing a pilot in a selected store."
+        "text": "Through research and ideation, we crafted a concept that was further validated with the development of a high-fidelity prototype. Leveraging feedback from stakeholders and targeted user interviews, we iteratively refined the design before implementing a pilot in the store."
       },
       "visuals": [
         {
