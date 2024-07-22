@@ -8,18 +8,19 @@
   },
   "year": "2023",
   "tags": [
-    "UI/UX Design",
+    "User Journeys",
     "Concept Development",
     "Art Direction",
-    "Prototyping"
+    "Prototyping",
+    "User Interface"
   ],
   "credits": "As part of Random Studio for Boucheron",
-  "lede": "As part of Random’s work for Boucheron, we created a nature-themed intervention in their flagship store in Ginza, Japan, providing an elevated experience for couples purchasing their wedding bands.",
+  "lede": "As part of Random’s year-long work for Boucheron, we created a nature-themed intervention in their flagship store in Ginza, Japan.",
   "blocks": [
     {
       "text": {
-        "heading": "Context",
-        "text": "Reflecting on our year-long journey with Boucheron, ‘The Bridal Forest’ exists as a poetic blend of tradition and technology. "
+        "heading": "Insight",
+        "text": "The Bridal Forest exists as a poetic blend of tradition and technology, providing an elevated experience for couples purchasing their wedding bands."
       },
       "visuals": [
         {
@@ -139,7 +140,7 @@
     {
       "text": {
         "heading": "Process",
-        "text": "I played an integral role in every stage of the project, from initial research and ideation to concept development. I led the creation of user journeys, prototyping, testing, and finalizing UI designs ready for development. Throughout the process, we constructed a prototype tree within the studio lab, facilitating continuous testing and refinement of designs to ensure seamless integration of physical and digital components."
+        "text": "Throughout the process, we constructed a prototype tree within the studio lab, facilitating continuous testing and refinement of designs to ensure seamless integration of physical and digital components."
       },
       "visuals": [
         {
