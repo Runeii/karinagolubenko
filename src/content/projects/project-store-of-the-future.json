@@ -1,6 +1,6 @@
 {
   "order": 1,
-  "isPrivate": false,
+  "isPrivate": true,
   "title": "Store of the Future",
   "description": "In-store digital selling platform",
   "featuredMedia": {
