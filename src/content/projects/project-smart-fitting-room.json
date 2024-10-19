@@ -1,6 +1,6 @@
 {
   "order": 3,
-  "isPrivate": true,
+  "isPrivate": false,
   "title": "Smart Fitting Room",
   "description": "Pilot launch of interactive fitting experience ",
   "featuredMedia": {
