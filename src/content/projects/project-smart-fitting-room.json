@@ -21,37 +21,7 @@
       "text": {
         "heading": "Insight",
         "text": "Fitting rooms are the bottom funnel of a sale. However, most of them are generic spaces, when they could be environments optimized to make customers feel comfortable and confident in their choices."
-      },
-      "visuals": [
-        {
-          "media": {
-            "image": "/media/SFR/Frame 465.svg"
-          },
-          "width": 100,
-          "marginLeft": 0
-        },
-        {
-          "media": {
-            "image": "/media/SFR/Frame 467.svg"
-          },
-          "width": 100,
-          "marginLeft": 0
-        },
-        {
-          "media": {
-            "image": "/media/SFR/Frame 468.svg"
-          },
-          "width": 100,
-          "marginLeft": 0
-        },
-        {
-          "media": {
-            "image": "/media/SFR/Frame 469.svg"
-          },
-          "width": 100,
-          "marginLeft": 0
-        }
-      ]
+      }
     },
     {
       "text": {
@@ -143,6 +113,30 @@
       },
       "visuals": [
         {
+          "media": {
+            "image": "/media/SFR/Frame 465.svg"
+          },
+          "width": 100,
+          "marginLeft": 0
+        },
+        {
+          "media": {
+            "image": "/media/SFR/Frame 467.svg"
+          },
+          "width": 100,
+          "marginLeft": 0
+        },
+        {
+          "media": {
+            "image": "/media/SFR/Frame 468.svg"
+          },
+          "width": 100,
+          "marginLeft": 0
+        },
+        {
+          "media": {
+            "image": "/media/SFR/Frame 469.svg"
+          },
           "width": 100,
           "marginLeft": 0
         }
