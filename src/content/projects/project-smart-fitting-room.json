@@ -24,6 +24,9 @@
       },
       "visuals": [
         {
+          "media": {
+            "image": "/media/SFR/Frame 465.svg"
+          },
           "width": 100,
           "marginLeft": 0
         },
