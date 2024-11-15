@@ -4,7 +4,7 @@
   "title": "Strelka.com Redesign",
   "description": "Redefining digital identity for evolving platform",
   "featuredMedia": {
-    "video": "0bbae3c8-dc46-4ee6-9ab5-648ed1f6ad87"
+    "image": "/media/Strelka/strelka-main.jpg"
   },
   "year": "2019–2021",
   "tags": [
@@ -99,6 +99,13 @@
       },
       "visuals": [
         {
+          "width": 100,
+          "marginLeft": 0
+        },
+        {
+          "media": {
+            "image": "/media/Strelka/design syetm.jpg"
+          },
           "width": 100,
           "marginLeft": 0
         }
