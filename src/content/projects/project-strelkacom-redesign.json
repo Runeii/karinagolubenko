@@ -67,7 +67,7 @@
             "video": "766389c9-9a5c-4bfd-9caa-4fc509c7e010"
           },
           "width": 80,
-          "marginLeft": 20
+          "marginLeft": 10
         }
       ]
     },
@@ -107,7 +107,7 @@
             "image": "/media/Strelka/design syetm.jpg"
           },
           "width": 80,
-          "marginLeft": 20
+          "marginLeft": 10
         }
       ]
     }
