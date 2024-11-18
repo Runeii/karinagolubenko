@@ -52,8 +52,8 @@
           "media": {
             "video": "5ac917c1-3f2a-42c9-b35c-2f168f944902"
           },
-          "width": 100,
-          "marginLeft": 0
+          "width": 80,
+          "marginLeft": 10
         }
       ]
     },
@@ -105,6 +105,13 @@
         {
           "width": 80,
           "marginLeft": 10
+        },
+        {
+          "media": {
+            "image": "/media/Strelka/screens overview.png"
+          },
+          "width": 100,
+          "marginLeft": 0
         }
       ]
     }
